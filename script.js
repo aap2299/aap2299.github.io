@@ -468,3 +468,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+function openTab(event, tabName) {
+    const tabcontents = document.querySelectorAll('.tabcontent');
+    tabcontents.forEach(tab => tab.style.display = 'none');
+
+    const tablinks = document.querySelectorAll('.tablinks');
+    tablinks.forEach(link => link.className = link.className.replace(' active', ''));
+
+    document.getElementById(tabName).style.display = 'block';
+    event.currentTarget.className += ' active';
+}

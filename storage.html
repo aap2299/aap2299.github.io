@@ -3,27 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>About</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Add styles for the gallery */
-      
-            /* Add styles for the gallery */
-            .gallery-container {
-            height: 600px; /* Adjust the height to your preference */
-            overflow-y: auto; /* Enables vertical scrolling */
-            display: flex;
-            flex-wrap: wrap;
-
-            }
-
-        /* Clearfix for main content */
-        .clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -31,6 +12,7 @@
             <h1 id="manuscript-head">
                 <a href="index.html"><i>De Regimine Principum</i></a>
             </h1>
+            
             <!-- Hamburger icon next to the title -->
             <div id="hamburger-icon" onclick="toggleSidebar()">☰</div>
         </div>
@@ -40,8 +22,7 @@
     <nav id="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">×</a> <!-- Close button -->
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="gallery.html">Gallery</a>
+        
 
         <!-- Dropdown menu -->
         <div class="dropdown">
@@ -49,107 +30,125 @@
             <div class="dropdown-content">
                 <a href="manuscripts.html">Manuscript List</a>
                 <a href="sigla.html">Manuscript Sigla</a>
+                <a href="gallery.html">Gallery</a>
+
+                <a href="about.html">Abbreviated Texts</a>
                 <!-- Add more options as needed -->
             </div>
         </div>
     </nav>
 
-    <main class="clearfix">
-        <h2>Gallery</h2>
-        <div class="gallery-container">
-        <div class="gallery">
-            <a target="_blank" href="manuscript.html?id=6">
-                <img src="images/MS740.jpg" alt="MS.740">
-            </a>
-            <div class="desc">MS.740</div> <!-- Example caption -->
+    <section id="about">
+        <div class="manuscript-info">
+            <h2>Abbreviated Texts</h2>
+            <p class="subheading">
+                ...
+            </p>
+    
+            <!-- Rest of the content here -->
         </div>
+        
+        <div class="manuscript-info">
+            <h3>Book 3 omitted</h3>
+            <ul>
+                <li><a href="manuscript.html?id=14">MS 389</a></li>
+                <li><a href="manuscript.html?id=48">Urb.lat.1376</a></li>
+                <li><a href="manuscript.html?id=53">Vat.lat.4267</a></li>
+            </ul>
+            <h3>Books 1 and 3 omitted</h3>
+                        <ul>
+                            <li><a href="manuscript.html?id=65">MS. theol. lat. fol. 490</a></li>
+                        </ul>
+                        
+                        <h3>Books 2 and 3 omitted</h3>
+                        <ul>
+                            <li><a href="manuscript.html?id=90">Mscr.Dresd.A.61</a></li>
+                        </ul>
+            <h3>Damage/missing sections</h3>
+            <ul>
+                <li><a href="manuscript.html?id=64">MS 2</a></li>
+            </ul>
 
-        <div class="gallery">
-            <a target="_blank" href="manuscript.html?id=8">
-                <img src="images/34.jpg" alt="Forest">
-            </a>
-            <div class="desc">St. Cugat 34</div> <!-- Example caption -->
+            <ul>
+                <li><a href="manuscript.html?id=69">Plut.31.sin.8</a><p>Starts from 1.1.27</p></li>
+            </ul>
+
+            <h3>Abridgement by M. Leoninum de Padua </h3>
+            <ul>
+                <li>
+                    <a href="manuscript.html?id=83">Cod.ms.92</a>
+                </li>
+                <li>
+                    <a href="manuscript.html?id=85">Msc.hist.185</a>
+                </li>
+            </ul>
+
+            <h3>Fragments</h3>
+            <ul>
+                <li><a href="manuscript.html?id=66">B.15.20</a> <p>First three chapters</p>
+                </li>
+
+            
+                    <li><a href="manuscript.html?id=70">MS 140</a> <p>endpaper</p></li>
+
+                    <li><a href="manuscript.html?id=72">UBU HS. 59</a> </li>
+
+                    <li><a href="manuscript.html?id=99">Lat. 2925</a> <p></p></li>
+
+                    <li><a href="manuscript.html?id=74">Vat.lat.770</a> <p>prologue</p></li>
+
+                    <li><a href="manuscript.html?id=75">Vat.lat.810</a> <p>3.2.29</p></li>
+               
+            </ul>
+
+            <h3>Incorporated into other texts</h3>
+            <ul>
+                <li><a href="manuscript.html?id=77">2137</a> <p>Part of a compendium of moral philosophy</p></li>
+
+                <li><a href="manuscript.html?id=81">Cod. Guelf. 428 Helmst</a> <p>Part of a sermon</p></li>
+
+                <li><a href="manuscript.html?id=86">Ms. Ham. 540</a> <p>Florilegium</p></li>
+            </ul>
+
+            <h3>Chapter Tables</h3>
+            <ul>
+                <li><a href="manuscript.html?id=88">Ff.IV.38</a></li>
+        
+
+            <ul>
+                <li><a href="manuscript.html?id=89">208</a></li>
+            
+                <li><a href="manuscript.html?id=95">Royal 5.C.III</a></li>
+         
+
+                <li><a href="manuscript.html?id=112">MS C.III.13</a></li>
+        
+
+           
+                <li><a href="manuscript.html?id=103">Ott.lat.2071</a></li>
+            </ul>
+
+
+
+
+
+
+
+            
+            
+            
+           
+            
+            <!-- Add more sections here following the same format -->
         </div>
-
-        <div class="gallery">
-            <a target="_blank" href="manuscript.html?id=4">
-                <img src="images/283.png" alt="MS 283">
-            </a>
-            <div class="desc">MS 283</div> <!-- Example caption -->
-        </div>
-
-        <div class="gallery">
-            <a target="_blank" href="manuscript.html?id=5">
-                <img src="images/BIII24.png" alt="B III 24">
-            </a>
-            <div class="desc">B III 24</div> <!-- Example caption -->
-        </div>
-
-        <div class="gallery">
-            <a target="_blank" href="manuscript.html?id=9">
-                <img src="images/Mil73.png" alt="Mil. 73">
-            </a>
-            <div class="desc">Mil. 73</div> <!-- Example caption -->
-        </div>
-
-        <div class="gallery">
-            <a target="_blank" href="manuscript.html?id=7">
-                <img src="images/MS586.jpg" alt="MS.586">
-            </a>
-            <div class="desc"><a href="manuscript.html?id=7" >MS. 586</a></div> <!-- Example caption -->
-        </div>
-
-        <div class="gallery">
-            <a target="_blank" href="manuscript.html?id=0">
-                <img src="images/Pallat727_jpg.jpg" alt="MS.586">
-            </a>
-            <div class="desc"><a href="manuscript.html?id=0" >Pal.Lat.727</a></div> 
-        </div>
-
-        <div class="gallery">
-            <a target="_blank" href="manuscript.html?id=3">
-                <img src="images/Pal.lat.726.jpg" alt="Pal.Lat.726">
-            </a>
-            <div class="desc"><a href="manuscript.html?id=3" >Pal.Lat.726</a></div> 
-        </div>
-
-        <div class="gallery">
-            <a target="_blank" href="manuscript.html?id=11">
-                <img src="images/plut788.png" alt="Plut.78.8">
-            </a>
-            <div class="desc"><a href="manuscript.html?id=11" >Plut.78.8</a></div> 
-        </div>
-
-        <div class="gallery">
-            <a target="_blank" href="manuscript.html?id=12">
-                <img src="images/plut789.png" alt="Plut.78.9">
-            </a>
-            <div class="desc"><a href="manuscript.html?id=12" >Plut.78.9</a></div> 
-        </div>
-
-        <div class="gallery">
-            <a target="_blank" href="manuscript.html?id=13">
-                <img src="images/plutsin1611.png" alt="Plut.Sin.16.11">
-            </a>
-            <div class="desc"><a href="manuscript.html?id=13" >Plut.Sin.16.11</a></div> 
-        </div>
-
-        <div class="gallery">
-            <a target="_blank" href="manuscript.html?id=2">
-                <img src="images/Reg.lat.844.jpg" alt="Reg.Lat.844">
-            </a>
-            <div class="desc"><a href="manuscript.html?id=2" >Reg.Lat.844</a></div> 
-        </div>
-
-
-
-        </div>
-    </main>
+    </section>
+    
 
     <footer>
-        <p>&copy; 2024</p>
+        <p>&copy; 2024 </p>
     </footer>
-
     <script src="script.js"></script>
+    <script src="mspage-script.js"></script>
+
 </body>
 </html>

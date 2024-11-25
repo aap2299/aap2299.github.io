@@ -558,7 +558,7 @@ th {
     background-color: #f9f9f9; /* Light background */
     padding: 15px;
     margin-bottom: 40px; /* Increased spacing between sections */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 /* Section headers */
@@ -620,4 +620,32 @@ th {
         padding: 20px;
         margin-bottom: 40px; /* Increased margin for better spacing on wider screens */
     }
+}
+
+
+.tab {
+    display: flex;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+.tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tabcontent {
+    display: none;
+    padding: 10px;
+    border: 2px solid #ddd;
+    margin-top: -1px;
 }
