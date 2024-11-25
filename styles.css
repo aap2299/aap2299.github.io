@@ -548,6 +548,7 @@ th {
 .manuscript-info {
     font-family: sans-serif;
     margin: 20px;
+    margin-left: 10px;
 }
 
 /* Section container (card) styling */
