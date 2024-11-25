@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manuscript Features</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        /* Add any basic styles directly for testing */
+        .category {
+            margin-bottom: 20px;
+        }
+        .item {
+            margin-left: 20px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Filters</h2>
+        <button id="advancedFilterBtn">Advanced Filters</button>
+        <!-- Add more filters here if needed -->
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Manuscript Features</h1>
+        <div id="manuscriptContainer">
+            <!-- Content will be dynamically loaded here -->
+        </div>
+    </div>
+
+    <script>
+        // Manuscript data embedded directly in the script
+        const manuscriptData = {
+            categories: [
+                {
+                    name: "Omissions",
+                    items: [
+                        {
+                            title: "Omission of Book 3",
+                            manuscripts: ["MS 389", "Urb.lat.1376", "Vat.lat.4267"]
+                        },
+                        {
+                            title: "Omission of Books 1 and 3",
+                            manuscripts: ["MS. theol. lat. fol. 490"]
+                        }
+                    ]
+                },
+                {
+                    name: "Abridgements",
+                    items: [
+                        {
+                            title: "Abridgement of Books 1 and 2",
+                            manuscripts: [
+                                {
+                                    id: "MS. Theol. 2 77",
+                                    incipit: "Cvm omnis disciplina et doctrina ex presenti fiat cognicione",
+                                    explicit: "plus viuuntpassione quam racione. Et sic est finis 2e partis secundi libri."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        };
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const container = document.getElementById("manuscriptContainer");
+
+            manuscriptData.categories.forEach((category) => {
+                // Create a category section
+                const categoryDiv = document.createElement("div");
+                categoryDiv.classList.add("category");
+
+                const categoryTitle = document.createElement("h2");
+                categoryTitle.textContent = category.name;
+                categoryDiv.appendChild(categoryTitle);
+
+                // Add items under the category
+                category.items.forEach((item) => {
+                    const itemDiv = document.createElement("div");
+                    itemDiv.classList.add("item");
+
+                    const itemTitle = document.createElement("h3");
+                    itemTitle.textContent = item.title;
+                    itemDiv.appendChild(itemTitle);
+
+                    // Render manuscripts
+                    if (Array.isArray(item.manuscripts)) {
+                        const manuscriptList = document.createElement("ul");
+
+                        item.manuscripts.forEach((manuscript) => {
+                            const manuscriptItem = document.createElement("li");
+
+                            if (typeof manuscript === "object" && manuscript.id) {
+                                manuscriptItem.innerHTML = `<strong>${manuscript.id}</strong>:<br>
+                                    <em>Incipit:</em> ${manuscript.incipit || "N/A"}<br>
+                                    <em>Explicit:</em> ${manuscript.explicit || "N/A"}`;
+                            } else {
+                                manuscriptItem.textContent = manuscript;
+                            }
+
+                            manuscriptList.appendChild(manuscriptItem);
+                        });
+
+                        itemDiv.appendChild(manuscriptList);
+                    }
+
+                    categoryDiv.appendChild(itemDiv);
+                });
+
+                container.appendChild(categoryDiv);
+            });
+        });
+    </script>
+</body>
+</html>

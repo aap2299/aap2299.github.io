@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirador Viewer</title>
+    <!-- Mirador CSS and JS -->
+    <link rel="stylesheet" href="https://unpkg.com/mirador@latest/dist/css/mirador.min.css">
+    <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+</head>
+<body>
+    <h1>Mirador Viewer</h1>
+    <!-- Mirador container -->
+    <div id="mirador"></div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const manifestId = params.get('manifestId'); // Get the manifestId from the URL
+        console.log("Manifest ID:", manifestId); // Log the manifest ID for debugging
+
+        if (manifestId) {
+            Mirador.viewer({
+                id: 'mirador',
+                windows: [{
+                    manifestId: manifestId // Use the manifestId from the URL
+                }],
+            });
+        } else {
+            document.getElementById('mirador').innerHTML = '<p>No manifest ID provided.</p>';
+        }
+    </script>
+</body>
+</html>

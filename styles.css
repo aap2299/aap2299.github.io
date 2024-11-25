@@ -1,0 +1,622 @@
+/* General Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; /* Default font */
+}
+
+
+
+/* Page container with flex for full height */
+#page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Flexbox content area */
+#content-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%; /* Ensure full width */
+    flex-grow: 1; /* Take up available space */
+}
+
+header {
+    background: linear-gradient(to right, #1B3A4B, #294f63); /* Deep teal gradient */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Slightly darker shadow */
+    border-bottom: 3px solid #A3C4BC; /* Soft olive accent */
+    letter-spacing: 1px;
+    color: #fff;
+    padding: 15px 30px; /* Increased padding for a more spacious look */
+    display: flex; /* Use flexbox for the header */
+    align-items: center;
+    position: relative;
+    font-weight: 500; /* Medium weight for text */
+    
+}
+
+.header-container {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Ensure full width */
+}
+/* Hamburger Icon */
+#hamburger-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    margin-left: auto;
+    
+}
+
+/* Navigation Menu */
+.nav-menu {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    background-color: #455b55; /* Background color for the menu */
+    position: absolute;
+    top: 60px; /* Place it below the header */
+    width: 100%;
+    z-index: 1;
+}
+
+/* Menu link styling */
+.nav-menu a {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+.nav-menu a:hover {
+    background-color: #555; /* Hover effect */
+}
+
+/* Sidebar styling */
+#sidebar {
+    height: 100%; /* Full height of the viewport */
+    width:0; /* Initially hidden */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(69, 90, 100, 0.95), rgba(55, 71, 79, 0.95));
+    border-radius: 10px 0 0 10px; /* Rounded corners on left side */
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.3);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px; /* Padding from the top */
+    border-left: 1px solid rgba(255, 255, 255, 0.1); 
+    transition: width 0.3s ease;
+}
+
+#sidebar.show {
+    width: 180px; /* Width when shown */
+}
+
+/* Sidebar links */
+#sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    display: block;
+    transition: background 0.2s ease, padding 0.2s ease;
+    border-radius: 5px; /* Soft edges for links */
+
+}
+
+#sidebar a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Soft hover effect */
+    padding-left: 25px; /* Small padding shift for interaction */
+
+}
+
+/* Close button inside the sidebar */
+#sidebar .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 36px;
+}
+
+/* Main content */
+main {
+    padding: 20px;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    color: white; /* Button text color */
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Soft hover effect */
+    padding-left: 25px; /* Small padding shift for interaction */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.dropbtn:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly lighter on hover */
+}
+
+/* Unified Font Size for Navigation and Dropdowns */
+.nav-menu a,
+.dropbtn,
+.dropdown-content a,
+#sidebar a {
+    font-size: 16px; /* Set to your desired size */
+}
+
+/* Optional: Adjust padding for consistency */
+.nav-menu a,
+.dropbtn,
+.dropdown-content a,
+#sidebar a {
+    padding: 10px; /* Make padding uniform */
+}
+
+
+
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(69, 90, 100, 0.95), rgba(55, 71, 79, 0.95));
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 8px; /* Rounded corners */
+    transition: opacity 0.3s ease; /* Smooth fade-in */
+    opacity: 0;
+
+
+}
+
+.dropdown-content a {
+    color: white; /* Link color in dropdown */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #575757; /* Darker shade on hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+    opacity: 1;
+
+
+}
+
+
+
+/* Arrow styling */
+.arrow {
+    font-size: 12px; /* Adjust size as needed */
+    margin-left: 5px; /* Space between text and arrow */
+    vertical-align: middle; /* Center the arrow vertically with the text */
+}
+
+
+
+/* Filter Sidebar */
+#filter-sidebar {
+    width: 250px; /* Fixed width */
+    flex-shrink: 0;
+    padding: 20px;
+    background-color: #fff; /* Light background for filters */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  
+}
+
+#filter-sidebar h2 {
+    margin-bottom: 15px; /* Adds gap between heading and options */
+}
+
+#filter-sidebar input,
+#filter-sidebar select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Search bar */
+#filter-shelfmark {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Manuscript list container */
+#manuscript-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    min-width: 0; /* Prevent overflow */
+}
+
+#manuscripts-list {
+    width: 100%; /* Ensure full width */
+}
+
+/* Manuscript options */
+.manuscript {
+    width: 100%; /* Full width */
+    background-color: #ffffff;
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Individual manuscript pages */
+#manuscript-details {
+    padding: 20px;
+}
+
+#manuscript-head {
+    text-decoration: none;
+    color: white;
+
+}
+
+#manuscript-head a:hover {
+    color: white; /* Keep the color the same on hover */
+    text-decoration: none; /* Optional: Keep or remove underline */
+}
+
+
+
+/* Manuscript count */
+#manuscript-count {
+    margin-bottom: 20px;
+    font-size: 1.0em;
+}
+
+/* Sticky footer styles */
+footer {
+    background: linear-gradient(to right, #1B3A4B, #294f63); /* Deep teal gradient */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Slightly darker shadow */
+    border-bottom: 3px solid #A3C4BC; /* Soft olive accent */    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+}
+
+/* Clear filters button */
+#clear-filters {
+    width: 100%; /* Full width */
+    padding: 10px;
+    background-color: #1B3A4B; /* Red background */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#clear-filters:hover {
+    background-color: #771212; /* Darker red on hover */
+}
+
+/* Button and link styles */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #005f87; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* View Record Button */
+.view-record-button {
+    background: linear-gradient(to right, #1B3A4B, #294f63); /* Muted green-gray gradient */
+    color: #ffffff;
+    padding: 4px 18px;
+    border: 1px solid #a3c4bc;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.view-record-button:hover {
+    background-color: #7f95ab;
+    text-decoration: none;
+
+}
+
+/* Generic Button */
+.button {
+    background: linear-gradient(to right, #1B3A4B, #294f63); /* Muted green-gray gradient */
+    color: #ffffff;
+    padding: 4px 18px;
+    border: 1px solid #a3c4bc;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #7f95ab;
+    text-decoration: none;
+    transform: translateY(-2px);
+
+}
+
+/* Table styles */
+table {
+    width: 100%; /* Full width */
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+/* Button style for IIIF */
+.buttoniiif {
+    border: none;
+}
+
+/* more details */
+
+.hidden {
+    display: none;
+}
+
+.more-details-btn {
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.more-details-btn span {
+    font-size: 12px;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+/* Rotate arrow when expanded */
+.more-details-btn.expanded span {
+    transform: rotate(180deg);
+}
+
+
+/* Gallery Container */
+.gallery-container {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between items */
+    padding: 10px; /* Padding around the gallery */
+}
+
+/* Individual Gallery Item */
+.gallery {
+    border: 1px solid #ccc;
+    overflow: hidden; /* Hide overflow if the image is larger */
+    position: relative; /* Position for absolute desc */
+}
+
+/* Image Styles */
+.gallery img {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevents extra space below images */
+}
+
+/* Description Styles */
+.desc {
+    padding: 2x;
+    text-align: center;
+    position: absolute;
+    bottom: 0; /* At the bottom of the gallery item */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+}
+
+.shelfmark {
+    margin-bottom: 0px;
+    font-size: 13px;
+    padding: 0px;
+}
+
+/* Credit Styles */
+#credits {
+    font-size: 5px;
+    padding: 2px;
+    margin-top: 2px;
+    font-weight: bold;
+}
+
+/* Main Content Wrapper */
+#content-wrap {
+    display: flex; /* Use flexbox for layout */
+    padding: 10px; /* Padding for content */
+}
+
+/* Sidebar adjustments */
+#filter-sidebar {
+    width: 250px; /* Fixed width for the sidebar */
+    margin-right: 20px; /* Space between sidebar and gallery */
+    flex-shrink: 0; /* Prevent sidebar from shrinking */
+}
+
+#gallery-container {
+    flex: 1; /* Allow the gallery to take remaining space */
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+
+
+.manuscript-image {
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px; /* Set max width for large screens */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+/* advanced filter button */
+
+.hidden {
+    display: none;
+}
+
+.filter-sidebar .toggle-advanced-filters {
+    cursor: pointer;
+}
+
+.advanced-filters {
+    margin-top: 10px;
+
+
+
+    
+}
+
+.toggle-advanced-filters {
+    background-color: #1B3A4B;
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 5px 20px; /* Add padding */
+    font-weight: bold; /* Make text bold */
+    cursor: pointer; /* Show pointer on hover */
+    border-radius: 5px; /* Rounded corners */
+    display: block;
+}
+
+/* Optional: Hover effect for the button */
+.toggle-advanced-filters:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+
+/* manuscript abbreviation page */
+
+/* General styling for the manuscript info section */
+.manuscript-info {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+/* Section container (card) styling */
+.manuscript-info .section-card {
+    border: 1px solid #ddd; /* Light border for cards */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background */
+    padding: 15px;
+    margin-bottom: 40px; /* Increased spacing between sections */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Section headers */
+.manuscript-info h3 {
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ccc; /* Underline */
+    padding-bottom: 5px;
+}
+
+/* List styling */
+.manuscript-info ul {
+    list-style: none; /* Removes default bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+/* List item styling */
+.manuscript-info li {
+    margin: 8px 0;
+    padding: 8px 12px;
+    background-color: #fff; /* White background for contrast */
+    border-radius: 6px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.2s; /* Animation */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Hover effect for list items */
+.manuscript-info li:hover {
+    background-color: #eef5ff; /* Light blue background on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Link styling */
+.manuscript-info a {
+    text-decoration: none;
+    color: #2a7a9c; /* Teal for links */
+    font-weight: bold;
+}
+
+/* Link hover effect */
+.manuscript-info a:hover {
+    color: #1d4d66; /* Darker teal on hover */
+    text-decoration: underline;
+}
+
+/* Additional text (e.g., incipits) */
+.manuscript-info li p {
+    margin: 5px 0 0 0;
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+}
+
+/* Larger cards on wide screens */
+@media (min-width: 768px) {
+    .manuscript-info .section-card {
+        padding: 20px;
+        margin-bottom: 40px; /* Increased margin for better spacing on wider screens */
+    }
+}

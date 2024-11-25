@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sigla</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 id="manuscript-head">
+                <a href="index.html"><i>De Regimine Principum</i></a>
+            </h1>
+            
+            <!-- Hamburger icon next to the title -->
+            <div id="hamburger-icon" onclick="toggleSidebar()">☰</div>
+        </div>
+    </header>
+
+    <!-- Sidebar menu (initially hidden) -->
+    <nav id="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">×</a> <!-- Close button -->
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+
+        <!-- Dropdown menu -->
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown(event)">Manuscripts<span class="arrow">&#9662;</span></button>
+            <div class="dropdown-content">
+                <a href="manuscripts.html">Manuscript List</a>
+                <a href="sigla.html">Manuscript Sigla</a>
+                <a href="gallery.html">Gallery</a>
+
+                <!-- Add more options as needed -->
+            </div>
+        </div>
+    </nav>
+    <div id="content-wrap">
+        <table id="sigla-table">
+            <thead>
+                <tr>
+                    <th>shelfmark</th>
+                    <th>Siglum</th>
+                </tr>
+            </thead>
+            <tbody id="sigla-list">
+                <!-- Manually populated rows -->
+                <tr>
+                    <td><a href="manuscript.html?id=0">Pal.Lat.727</a></td>
+                    <td>b</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="manuscript.html?id=2">Reg.Lat.844</a></td>
+                    <td>β</td>
+                </tr>
+
+                <tr>
+                    <td><a href="manuscript.html?id=3">Pal.Lat.726</a></td>
+                    <td>a</td>
+                </tr>
+
+                <tr>
+                    <td><a href="manuscript.html?id=4">MS 286</a></td>
+                    <td>M</td>
+                </tr>
+
+                <tr>
+                    <td><a href="manuscript.html?id=5">MS. B.III.24</a></td>
+                    <td>c<sup>1</sup></td>
+
+
+                </tr>
+                <tr>
+                    <td><a href="manuscript.html?id=6">MS 740</a></td>
+                    <td>i</td>
+                </tr>
+                <tr>
+                    <td><a href="manuscript.html?id=7">MS 586/776</a></td>
+                    <td>o</td>
+                </tr>
+
+                <tr>
+                    <td><a href="manuscript.html?id=8">St. Cugat 34</a></td>
+                    <td>a<sup>1</sup></td>
+                </tr>
+                <tr>
+                    <td><a href="manuscript.html?id=9">Mil.II 73</a></td>
+                    <td>b<sup>1</sup></td>
+                </tr>
+                <tr>
+                    <td><a href="manuscript.html?id=10">Dep. Erf., CA 2° 139</a></td>
+                    <td>d<sup>1</sup></td>
+                </tr>
+                <tr>
+                    <td><a href="manuscript.html?id=11">Plut.78.8</a></td>
+                    <td>L</td>
+                </tr>
+                
+
+
+                
+                <script src="script.js"></script>
+                <script src="mspage-script.js"></script>
+
+  
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>&copy; 2024</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texts Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Assuming you have a shared stylesheet -->
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1 id="manuscript-head">
+                <a href="index.html"><i>De Regimine Principum</i></a>
+            </h1>
+            
+            <!-- Hamburger icon next to the title -->
+            <div id="hamburger-icon" onclick="toggleSidebar()">☰</div>
+        </div>
+    </header>
+
+    <!-- Sidebar menu (initially hidden) -->
+    <nav id="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">×</a> <!-- Close button -->
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+
+        <!-- Dropdown menu -->
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown(event)">Manuscripts<span class="arrow">&#9662;</span></button>
+            <div class="dropdown-content">
+                <a href="manuscripts.html">Manuscript List</a>
+                <a href="sigla.html">Manuscript Sigla</a>
+                <a href="gallery.html">Gallery</a>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Include your header or navigation here if necessary -->
+
+    <div class="container">
+        <h1>Manuscripts Containing the Text</h1>
+        
+        <div id="manuscript-list"></div>
+    </div>
+
+    <script>
+        // Function to get query parameter value from URL
+        function getQueryParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        // Load the manuscripts data from the external JSON file
+        fetch('manuscripts.json')  // Update this path to your actual JSON file
+            .then(response => response.json())
+            .then(manuscripts => {
+                // Get the textID from the URL query parameter
+                const textID = getQueryParameter('textID');
+
+                // If no textID is found, show an error or redirect
+                if (!textID) {
+                    document.getElementById('manuscript-list').innerHTML = "<p>No text specified. Please provide a textID in the URL.</p>";
+                    return;
+                }
+
+                // Filter manuscripts that contain the specified textID
+                const manuscriptsWithText = manuscripts.filter(manuscript =>
+                    manuscript.texts.some(text => text.textID === textID)
+                );
+
+                // Check if any manuscripts were found
+                if (manuscriptsWithText.length === 0) {
+                    document.getElementById('manuscript-list').innerHTML = `<p>No manuscripts found for this text (ID: ${textID}).</p>`;
+                    return;
+                }
+
+                // Generate the HTML content for the manuscripts list
+                let content = `<h2>Manuscripts containing the text (ID: ${textID}):</h2>`;
+                content += `<ul>`;
+                manuscriptsWithText.forEach(manuscript => {
+                    content += `
+                        <li>
+                            <a href="manuscripts.html?manuscriptID=${manuscript.id}" title="View details for ${manuscript.name}">${manuscript.name}</a>
+                        </li>
+                    `;
+                });
+                content += `</ul>`;
+
+                // Insert the generated content into the page
+                document.getElementById('manuscript-list').innerHTML = content;
+            })
+            .catch(error => {
+                document.getElementById('manuscript-list').innerHTML = `<p>Error loading manuscripts: ${error.message}</p>`;
+            });
+    </script>
+</body>
+</html>

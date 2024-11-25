@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 id="manuscript-head">
+                <a href="index.html"><i>De Regimine Principum</i></a>
+            </h1>
+            
+            <!-- Hamburger icon next to the title -->
+            <div id="hamburger-icon" onclick="toggleSidebar()">☰</div>
+        </div>
+    </header>
+
+    <!-- Sidebar menu (initially hidden) -->
+    <nav id="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">×</a> <!-- Close button -->
+        <a href="index.html">Home</a>
+        
+
+        <!-- Dropdown menu -->
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown(event)">Manuscripts<span class="arrow">&#9662;</span></button>
+            <div class="dropdown-content">
+                <a href="manuscripts.html">Manuscript List</a>
+                <a href="sigla.html">Manuscript Sigla</a>
+                <a href="gallery.html">Gallery</a>
+
+                <a href="about.html">Abbreviated Texts</a>
+                <!-- Add more options as needed -->
+            </div>
+        </div>
+    </nav>
+
+    <section id="about">
+        <div class="manuscript-info">
+            <h2>Abbreviated Texts</h2>
+            <p class="subheading">
+                ...
+            </p>
+    
+            <!-- Rest of the content here -->
+        </div>
+        
+        <div class="manuscript-info">
+            <h3>Omit Book 3</h3>
+            <ul>
+                <li><a href="manuscript.html?id=14">MS 389</a></li>
+                <li><a href="manuscript.html?id=48">Urb.lat.1376</a></li>
+                <li><a href="manuscript.html?id=53">Vat.lat.4267</a></li>
+            </ul>
+            
+            <h3>Abridgement of Books 1 and 2</h3>
+            <ul>
+                <li>
+                    <a href="manuscripts.html?manuscript=MSTheol277">MS. Theol. 2 77</a>
+                    <p>Inc: *Cvm omnis disciplina et doctrina ex presenti fiat cognicione*<br>
+                    Expl: *plus viuuntpassione quam racione. Et sic est finis 2e partis secundi libri.*</p>
+                </li>
+            </ul>
+            
+            <h3>Damage</h3>
+            <ul>
+                <li><a href="manuscripts.html?manuscript=MS2">MS 2</a></li>
+            </ul>
+            
+            <h3>Omission of Books 1 and 3</h3>
+            <ul>
+                <li><a href="manuscripts.html?manuscript=MSTheolLatFol490">MS. theol. lat. fol. 490</a></li>
+            </ul>
+            
+            <h3>Omission of Books 2 and 3</h3>
+            <ul>
+                <li><a href="manuscripts.html?manuscript=MscrDresdA61">Mscr dresd.a.61</a></li>
+            </ul>
+            
+            <!-- Add more sections here following the same format -->
+        </div>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 </p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="mspage-script.js"></script>
+
+</body>
+</html>

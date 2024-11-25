@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add styles for the gallery */
+      
+            /* Add styles for the gallery */
+            .gallery-container {
+            height: 600px; /* Adjust the height to your preference */
+            overflow-y: auto; /* Enables vertical scrolling */
+            display: flex;
+            flex-wrap: wrap;
+
+            }
+
+        /* Clearfix for main content */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 id="manuscript-head">
+                <a href="index.html"><i>De Regimine Principum</i></a>
+            </h1>
+            <!-- Hamburger icon next to the title -->
+            <div id="hamburger-icon" onclick="toggleSidebar()">☰</div>
+        </div>
+    </header>
+
+    <!-- Sidebar menu (initially hidden) -->
+    <nav id="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">×</a> <!-- Close button -->
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+
+        <!-- Dropdown menu -->
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown(event)">Manuscripts<span class="arrow">&#9662;</span></button>
+            <div class="dropdown-content">
+                <a href="manuscripts.html">Manuscript List</a>
+                <a href="sigla.html">Manuscript Sigla</a>
+                <!-- Add more options as needed -->
+            </div>
+        </div>
+    </nav>
+
+    <main class="clearfix">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+        <div class="gallery">
+            <a target="_blank" href="manuscript.html?id=6">
+                <img src="images/MS740.jpg" alt="MS.740">
+            </a>
+            <div class="desc">MS.740</div> <!-- Example caption -->
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="manuscript.html?id=8">
+                <img src="images/34.jpg" alt="Forest">
+            </a>
+            <div class="desc">St. Cugat 34</div> <!-- Example caption -->
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="manuscript.html?id=4">
+                <img src="images/283.png" alt="MS 283">
+            </a>
+            <div class="desc">MS 283</div> <!-- Example caption -->
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="manuscript.html?id=5">
+                <img src="images/BIII24.png" alt="B III 24">
+            </a>
+            <div class="desc">B III 24</div> <!-- Example caption -->
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="manuscript.html?id=9">
+                <img src="images/Mil73.png" alt="Mil. 73">
+            </a>
+            <div class="desc">Mil. 73</div> <!-- Example caption -->
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="manuscript.html?id=7">
+                <img src="images/MS586.jpg" alt="MS.586">
+            </a>
+            <div class="desc"><a href="manuscript.html?id=7" >MS. 586</a></div> <!-- Example caption -->
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="manuscript.html?id=0">
+                <img src="images/Pallat727_jpg.jpg" alt="MS.586">
+            </a>
+            <div class="desc"><a href="manuscript.html?id=0" >Pal.Lat.727</a></div> 
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="manuscript.html?id=3">
+                <img src="images/Pal.lat.726.jpg" alt="Pal.Lat.726">
+            </a>
+            <div class="desc"><a href="manuscript.html?id=3" >Pal.Lat.726</a></div> 
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="manuscript.html?id=11">
+                <img src="images/plut788.png" alt="Plut.78.8">
+            </a>
+            <div class="desc"><a href="manuscript.html?id=11" >Plut.78.8</a></div> 
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="manuscript.html?id=12">
+                <img src="images/plut789.png" alt="Plut.78.9">
+            </a>
+            <div class="desc"><a href="manuscript.html?id=12" >Plut.78.9</a></div> 
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="manuscript.html?id=13">
+                <img src="images/plutsin1611.png" alt="Plut.Sin.16.11">
+            </a>
+            <div class="desc"><a href="manuscript.html?id=13" >Plut.Sin.16.11</a></div> 
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="manuscript.html?id=2">
+                <img src="images/Reg.lat.844.jpg" alt="Reg.Lat.844">
+            </a>
+            <div class="desc"><a href="manuscript.html?id=2" >Reg.Lat.844</a></div> 
+        </div>
+
+
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
