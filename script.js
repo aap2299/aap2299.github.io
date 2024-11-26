@@ -478,3 +478,5 @@ function openTab(event, tabName) {
     document.getElementById(tabName).style.display = 'block';
     event.currentTarget.className += ' active';
 }
+
+
