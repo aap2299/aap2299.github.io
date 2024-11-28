@@ -43,59 +43,96 @@
             <!-- Sidebar for filtering options -->
             <aside id="filter-sidebar">
                 <h2>Filter Manuscripts</h2>
-                <input type="text" id="filter-shelfmark" placeholder="Search by shelfmark...">
-                <select id="filter-place">
-                    <option value="">Select Country</option>
-                    <option value="Italy">Italy</option>
-                    <option value="England">England</option>
-                    <option value="France">France</option>
-                    <option value="Poland">Poland</option>
-                    <option value="Spain">Spain</option>
-                    <option value="Germany">Germany</option>
-
-                </select>
-                <select id="filter-date">
-                    <option value="">Select Date</option>
-                    <option value="s. 13">s. 13</option>
-                    <option value="s. 14">s. 14</option>
-                    <option value="s. 15">s. 15</option>
-                </select>
-                <select id="filter-language">
-                    <option value="">Select Language</option>
-                    <option value="Latin">Latin</option>
-                    <option value="English">English</option>
-                    <option value="French">French</option>
-                </select>
                 
-               <!-- Button to toggle Advanced Filters -->
-    <button class="toggle-advanced-filters">Advanced Filters ▼</button>
-    
-    <!-- Advanced filter options that are initially hidden -->
-    <div class="advanced-filters hidden">
-        <select id="filter-digitised">
-            <option value="">Digitised</option>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
-        </select>
-
-        <select id="filter-complete">
-            <option value="">Complete Text</option>
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
-        </select>
-
-        <select id="filter-group">
-            <option value="">Select Group</option>
-            <option value="Ξ">Group Ξ</option>
-            <option value="Λ">Group Λ</option>
-        </select>
-
-        <select id="filter-composite">
-            <option value="">Composite</option>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
-        </select>
-    </div>
+                <!-- Search by shelfmark -->
+                <div class="filter">
+                    <label for="filter-shelfmark">Search by Shelfmark:</label>
+                    <input type="text" id="filter-shelfmark" placeholder="Enter shelfmark...">
+                </div>
+                
+                <!-- Country filter -->
+                <div class="filter">
+                    <label for="filter-place">Country:</label>
+                    <select id="filter-place">
+                        <option value="">Select Country</option>
+                        <option value="Italy">Italy</option>
+                        <option value="England">England</option>
+                        <option value="France">France</option>
+                        <option value="Poland">Poland</option>
+                        <option value="Spain">Spain</option>
+                        <option value="Germany">Germany</option>
+                    </select>
+                </div>
+            
+                <!-- Date filter -->
+                <div class="filter">
+                    <label for="filter-date">Date:</label>
+                    <select id="filter-date">
+                        <option value="">Select Date</option>
+                        <option value="s. 13">s. 13</option>
+                        <option value="s. 14">s. 14</option>
+                        <option value="s. 15">s. 15</option>
+                    </select>
+                </div>
+            
+                <!-- Language filter -->
+                <div class="filter">
+                    <label for="filter-language">Language:</label>
+                    <select id="filter-language">
+                        <option value="">Select Language</option>
+                        <option value="Latin">Latin</option>
+                        <option value="English">English</option>
+                        <option value="French">French</option>
+                    </select>
+                </div>
+                
+                <!-- Advanced Filters Toggle -->
+                <button class="toggle-advanced-filters">Advanced Filters ▼</button>
+                
+                <!-- Advanced filter options -->
+                <div class="advanced-filters hidden">
+                    <!-- Digitised filter -->
+                    <div class="filter">
+                        <label for="filter-digitised">Digitised:</label>
+                        <select id="filter-digitised">
+                            <option value="">Any</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+            
+                    <!-- Complete Text filter -->
+                    <div class="filter">
+                        <label for="filter-complete">Complete Text:</label>
+                        <select id="filter-complete">
+                            <option value="">Any</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+            
+                    <!-- Group filter -->
+                    <div class="filter">
+                        <label for="filter-group">Group:</label>
+                        <select id="filter-group">
+                            <option value="">Select Group</option>
+                            <option value="Ξ">Group Ξ</option>
+                            <option value="Λ">Group Λ</option>
+                        </select>
+                    </div>
+            
+                    <!-- Composite filter -->
+                    <div class="filter">
+                        <label for="filter-composite">Composite:</label>
+                        <select id="filter-composite">
+                            <option value="">Any</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                </div>
+        
+            
 
 
                 

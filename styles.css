@@ -3,7 +3,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: sans-serif; /* Default font */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Default font */
 }
 
 
@@ -549,11 +549,32 @@ th {
 
 .advanced-filters {
     margin-top: 10px;
-
-
-
-    
 }
+
+
+
+.filter label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.25rem; /* Reduce space between label and input/select */
+    font-size: 0.9rem; /* Optional: Adjust font size */
+}
+
+#filter-sidebar {
+    padding: 1rem; /* Adjust padding inside the entire sidebar */
+}
+.filter select, 
+.filter input[type="text"] { /* Target dropdowns and text inputs */
+    width: 100%; /* Ensure they take the full width of their container */
+    padding: 0.2rem 0.4rem; /* Adjust padding for a smaller height */
+    font-size: 0.85rem; /* Reduce font size */
+    height: auto; /* Let the browser automatically adjust the height */
+    border: 1px solid #ccc; /* Optional: Make borders consistent */
+    border-radius: 4px; /* Optional: Keep a subtle rounded corner */
+    box-sizing: border-box; /* Ensures padding is included in width/height */
+}
+
+
 
 .toggle-advanced-filters {
     background-color: #1B3A4B;
@@ -576,7 +597,7 @@ th {
 
 /* General styling for the manuscript info section */
 .manuscript-info {
-    font-family: sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 20px;
     margin-left: 10px;
 }

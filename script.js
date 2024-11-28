@@ -479,4 +479,3 @@ function openTab(event, tabName) {
     event.currentTarget.className += ' active';
 }
 
-
