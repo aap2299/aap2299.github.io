@@ -359,7 +359,7 @@ document.getElementById("clear-filters")?.addEventListener("click", function() {
             const dateFilter = document.getElementById('filter-date').value;
             const languageFilter = document.getElementById('filter-language').value;
             const digitisedFilter = document.getElementById('filter-digitised').value;
-            const completeFilter = document.getElementById('filter-complete').value;
+            const completeFilter = document.getElementById('filter-complete').value.toLowerCase();
             const groupFilter = document.getElementById('filter-group').value;
             const compositeFilter = document.getElementById('filter-composite').value;
         
@@ -379,7 +379,7 @@ document.getElementById("clear-filters")?.addEventListener("click", function() {
                 const matchesPlace = placeFilter === '' || place === placeFilter;
                 const matchesDate = dateFilter === '' || date === dateFilter;
                 const matchesDigitised = digitisedFilter === '' || digitised === digitisedFilter;
-                const matchesComplete = completeFilter === '' || complete === completeFilter;
+                const matchesComplete = completeFilter === '' ||  (complete && complete.toLowerCase() === completeFilter);
                 const matchesGroup = groupFilter === '' || group === groupFilter;
                 const matchesLanguage = languageFilter === '' || language === languageFilter;
                 const matchesComposite = compositeFilter === '' || composite === compositeFilter;
@@ -441,7 +441,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", () => {
     const textID = window.location.pathname.replace(".html", "");
-    fetch("path/to/your/json/file.json")
+    fetch("texts.json")
         .then(response => response.json())
         .then(manuscripts => {
             const manuscriptsWithText = manuscripts.filter(manuscript =>
@@ -478,4 +478,83 @@ function openTab(event, tabName) {
     document.getElementById(tabName).style.display = 'block';
     event.currentTarget.className += ' active';
 }
+// Function to load text based on the selected ID and chapter
+function loadText(textIdWithChapter, selectorId, texts) {
+    const [textId, chapterId] = textIdWithChapter.split(':');  // Split into textId and chapterId
+    console.log(`Loading text: ${textId} (Chapter: ${chapterId}) for selector: ${selectorId}`);
+
+    const text = texts.find(item => item.id === textId);  // Find the text by its ID
+    if (text) {
+        const chapter = text.chapters.find(ch => ch.chapter === chapterId); // Find the specific chapter
+        if (chapter) {
+            console.log('Chapter found:', chapter);
+            document.getElementById(`${selectorId}-title`).innerText = text.title;
+            document.getElementById(`${selectorId}-content`).innerHTML = chapter.content;
+        } else {
+            console.log('Chapter not found:', chapterId);
+        }
+    } else {
+        console.log('Text not found for ID:', textId);
+    }
+}
+
+// Function to populate a dropdown with manuscripts and their chapters
+function populateDropdown(selectorId, manuscripts) {
+    const dropdown = document.getElementById(selectorId);
+    
+    manuscripts.forEach(manuscript => {
+        // Create an optgroup for each manuscript
+        const optgroup = document.createElement('optgroup');
+        optgroup.label = manuscript.title;
+
+        // Add chapters as options under the manuscript
+        manuscript.chapters.forEach(chapter => {
+            const option = document.createElement('option');
+            option.value = `${manuscript.id}:${chapter.chapter}`; // Unique identifier for manuscript and chapter
+            option.textContent = chapter.chapter; // Display the chapter
+            optgroup.appendChild(option);
+        });
+
+        // Append the optgroup to the dropdown
+        dropdown.appendChild(optgroup);
+    });
+}
+
+// Fetch texts and populate dropdowns
+fetch('./texts.json')
+    .then(response => response.json())
+    .then(data => {
+        const texts = data;  // All text data, including manuscripts
+
+        // Debugging: Ensure data is loaded correctly
+        console.log('Texts loaded:', texts);
+
+        // Populate the dropdowns with the manuscript data
+        populateDropdown('text1-selector', texts);
+        populateDropdown('text2-selector', texts);
+
+        // Load initial content when the page loads
+        window.onload = function () {
+            console.log('Page loaded. Loading initial content...');
+            loadText('text1:1.1.1', 'text1', texts);  // Load initial content for text1, chapter 1.1.1
+            loadText('text2:2.1.1', 'text2', texts);  // Load initial content for text2, chapter 2.1.1
+        };
+
+        // Event listener for the dropdown in the first text box
+        document.getElementById('text1-selector').addEventListener('change', function () {
+            const selectedText = this.value.split(':')[0];  // Get the selected manuscript's ID
+            console.log('Dropdown 1 selected:', selectedText);
+            loadText(this.value, 'text1', texts);  // Pass the full value (manuscript ID and chapter)
+        });
+
+        // Event listener for the dropdown in the second text box
+        document.getElementById('text2-selector').addEventListener('change', function () {
+            const selectedText = this.value.split(':')[0];  // Get the selected manuscript's ID
+            console.log('Dropdown 2 selected:', selectedText);
+            loadText(this.value, 'text2', texts);  // Pass the full value (manuscript ID and chapter)
+        });
+
+    })
+    .catch(error => console.error('Error loading texts:', error));
+
 
