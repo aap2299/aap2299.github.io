@@ -154,9 +154,13 @@ function loadManuscriptDetails() {
                               
                         <p><strong>Digitised:</strong> ${manuscript.digitised === "yes" ? "Yes" : "No"}</p>
                         <p><strong>Group:</strong> ${manuscript.group}</p>
-                        <p><strong>Further Information:</strong> ${manuscript.description}</p>
-               
-                    </div>
+                <p><strong>Further Information:</strong></p>
+<ul>
+    ${(Array.isArray(manuscript.description) ? manuscript.description : [manuscript.description])
+        .map(item => `<li>${item}</li>`).join('')}
+</ul>
+
+    </div>
                 `;
 
                
@@ -557,4 +561,84 @@ fetch('./texts.json')
     })
     .catch(error => console.error('Error loading texts:', error));
 
+
+
+    // chapter page 
+
+  // Function to fetch and load the books and chapters from the JSON file
+fetch('book.json')
+.then(response => response.json())
+.then(data => {
+    const booksList = document.getElementById('books-list');
+    const chapterContent = document.getElementById('chapter-content');
+
+    // Loop through each book
+    data.books.forEach(book => {
+        // Create a dropdown for each book
+        const bookDiv = document.createElement('div');
+        const bookDropdown = document.createElement('button');
+        bookDropdown.textContent = `Book ${book.book_number}`;
+        bookDropdown.classList.add('book-dropdown');
+
+        // Create a container for the parts in this book
+        const partContainer = document.createElement('div');
+        partContainer.style.display = 'none';  // Hide parts initially
+
+        // Loop through each part in the book
+        book.parts.forEach(part => {
+            const partDropdown = document.createElement('button');
+            partDropdown.textContent = `Part ${part.part}`;
+            partDropdown.classList.add('part-dropdown');
+
+            // Create a container for the chapters in this part
+            const chapterContainer = document.createElement('div');
+            chapterContainer.style.display = 'none';  // Hide chapters initially
+
+            // Loop through each chapter in the part
+            part.chapters.forEach(chapter => {
+                const chapterLink = document.createElement('a');
+                chapterLink.href = "#";
+                chapterLink.textContent = chapter.chapter_title; // Only show chapter title
+
+                // When a chapter title is clicked, load the chapter content dynamically
+                chapterLink.addEventListener('click', function() {
+                    chapterContent.innerHTML = `
+                        <h2>${chapter.chapter_title}</h2>
+                        <p>${chapter.chapter_text}</p>
+                    `;
+                });
+
+                // Append chapter link to the chapter container
+                chapterContainer.appendChild(chapterLink);
+                chapterContainer.appendChild(document.createElement('br')); // Add line break
+            });
+
+            // Toggle the visibility of the chapters when the part is clicked
+            partDropdown.addEventListener('click', function() {
+                const isVisible = chapterContainer.style.display === 'block';
+                chapterContainer.style.display = isVisible ? 'none' : 'block';
+            });
+
+            // Append the part dropdown and chapter container to the part container
+            partContainer.appendChild(partDropdown);
+            partContainer.appendChild(chapterContainer);
+        });
+
+        // Toggle the visibility of the parts when the book is clicked
+        bookDropdown.addEventListener('click', function() {
+            const isVisible = partContainer.style.display === 'block';
+            partContainer.style.display = isVisible ? 'none' : 'block';
+        });
+
+        // Append the book dropdown and part container to the page
+        bookDiv.appendChild(bookDropdown);
+        bookDiv.appendChild(partContainer);
+        booksList.appendChild(bookDiv);
+    });
+})
+.catch(error => {
+    console.error('Error loading JSON data:', error);
+});
+
+    
 

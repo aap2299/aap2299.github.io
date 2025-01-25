@@ -727,21 +727,21 @@ th {
     display: block;
 }
 
-/* Text Viewer Container */
+
+/* Container for the text viewer */
 .text-viewer {
     display: flex;
-    gap: 20px;
-    margin: 20px;
-    flex-wrap: nowrap; /* Prevent stacking on smaller screens */
-    justify-content: space-between;
+    flex: 1; /* Take up all remaining space below the header */
+    width: 100%; /* Full width of the page */
+    gap: 20px; /* Spacing between boxes */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width calculations */
 }
 
 /* Text Box Styling */
 .text-box {
-    flex: 1;
-    max-width: 48%;
-    min-width: 300px; /* Ensure the text box doesn't shrink too much */
-    height: 400px;
+    flex: 1; /* Ensure both boxes take up equal width */
+    height: 100%; /* Fill the height of the container */
     padding: 20px;
     border-radius: 10px;
     background-color: #fff;
@@ -750,6 +750,7 @@ th {
     transition: all 0.3s ease;
 }
 
+/* Hover effect */
 .text-box:hover {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
@@ -792,13 +793,113 @@ th {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    /* No change to the text viewer, still side by side */
     .text-viewer {
+        flex-direction: column; /* Stack boxes vertically */
         gap: 20px;
     }
-    
-    /* No change to the text box */
+
     .text-box {
-        max-width: 48%;  /* Keep the side-by-side layout */
+        max-width: 100%; /* Full width in single-column view */
     }
 }
+
+
+/* chapters */
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f8f8f8; /* Light gray background to match the rest of your site */
+}
+
+/* Center the h1 title */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333; /* Darker text for contrast */
+}
+
+/* Styling for the books dropdown */
+#books-list {
+    margin-bottom: 20px;
+}
+
+.book-dropdown {
+    font-size: 18px; /* Adjusted font size for better readability */
+    background-color: #3498db; /* Blue color for buttons */
+    color: white;
+    padding: 12px; /* Increased padding for a more modern look */
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    margin: 5px 0;
+    border-radius: 5px; /* Rounded corners for a smoother look */
+}
+
+.book-dropdown:hover {
+    background-color: #2980b9; /* Darker blue on hover for interactivity */
+}
+
+/* Styling for chapter content */
+#chapter-content {
+    margin-top: 20px;
+    background-color: white; /* White background for content area */
+    padding: 20px;
+    border-radius: 5px; /* Rounded corners for a more modern feel */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a floating effect */
+}
+
+#chapter-content h2 {
+    font-size: 24px;
+    color: #3498db; /* Consistent blue from dropdown */
+    margin-bottom: 15px;
+}
+
+#chapter-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555; /* Slightly lighter color for better readability */
+}
+
+/* Remove default button styles */
+.book-dropdown {
+    font-size: 18px; /* Adjusted font size for better readability */
+    background-color: #3498db; /* Blue color for buttons */
+    color: white;
+    padding: 12px 15px; /* Adjusted padding for a better look */
+    width: 100%;
+    border: none; /* Remove border */
+    cursor: pointer;
+    text-align: left;
+    margin: 5px 0;
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Ensures padding is inside the width */
+    font-weight: 600; /* Slightly bolder text */
+    transition: all 0.3s ease; /* Smooth transition for interactive effects */
+    appearance: none; /* Ensure no default browser styling for buttons */
+    outline: none; /* Remove the default focus outline */
+}
+
+/* Hover effect to change color */
+.book-dropdown:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: scale(1.0); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for floating effect */
+}
+
+/* Active (clicked) state */
+.book-dropdown:active {
+    background-color: #1d6fa5; /* Even darker blue when clicked */
+    transform: scale(1); /* Ensure it returns to normal size */
+    box-shadow: none; /* Remove shadow when clicked */
+}
+
+/* Focus state for accessibility (keyboard navigation) */
+.book-dropdown:focus {
+    outline: none; /* Remove default outline */
+    border: 2px solid #2980b9; /* Custom border on focus */
+}
+
+

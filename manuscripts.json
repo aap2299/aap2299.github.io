@@ -1731,7 +1731,7 @@
     "shelfmark": "MS 434",
     "date": "s. 14",
     "location": "Germany", 
-    "description": "Cicero <i>De officiis</i> follows straight after (same page)",
+    "description": ["Cicero <i>De officiis</i> follows straight after (same page)","<a target='blank' href='https://drive.google.com/drive/folders/1BzR_jzxXE0qTJh3Ea9kd4RbtREqMKOSt?usp=drive_link'>Transcription</a>","<a target='blank' href='https://drive.google.com/file/d/1BT4XU8kvq_o7abuXQa-OEtRMi0nWqRNr/view?usp=sharing'>digitisation pdf</a>"],
     "digitised": "yes",
     "onlineRecord": "https://handschriftenportal.de/search?hspobjectid=HSP-97b95f73-3cc7-3d14-8175-78d64d9c38e7&q=Erlangen+%22de+regimine+principum%22&hl=true",
     "library": "Erlangen, Universitätsbibliothek Erlangen-Nürnberg",
