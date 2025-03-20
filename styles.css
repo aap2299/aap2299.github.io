@@ -1,12 +1,19 @@
 /* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif; /* Default font */
+    font-family: 'Poppins', sans-serif; /* Modern & clean */
+
 }
 
-
+header, footer {
+    width: 100%;
+    max-width: 100vw; /* Ensures no extra width */
+    box-sizing: border-box; /* Ensures padding doesn't expand the size */
+}
 
 /* Page container with flex for full height */
 #page-container {
@@ -21,22 +28,30 @@ html, body {
     flex-direction: row;
     width: 100%; /* Ensure full width */
     flex-grow: 1; /* Take up available space */
+    flex: 1; /* Pushes the footer to the bottom */
+
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
 header {
-    background: linear-gradient(to right, #1B3A4B, #294f63); /* Deep teal gradient */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Slightly darker shadow */
-    border-bottom: 3px solid #A3C4BC; /* Soft olive accent */
-    letter-spacing: 1px;
-    color: #fff;
-    padding: 15px 30px; /* Increased padding for a more spacious look */
-    display: flex; /* Use flexbox for the header */
+    background: linear-gradient(to right, #1B3A4B, #2C4F63); /* Smooth gradient */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow for a premium look */
+    border-bottom: 3px solid #A3C4BC; /* Accent color */
+    color: #ffffff;
+    padding: 10px 30px; /* More padding for a spacious feel */
+    height: 60px;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
     position: relative;
-    font-weight: 500; /* Medium weight for text */
-    font-family: museo sans;
-    
+    font-family: 'Poppins', sans-serif; /* Cleaner, modern font */
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1.2px; /* Slight spacing for elegance */
 }
+
 
 .header-container {
     display: flex; /* Use flexbox for alignment */
@@ -308,10 +323,16 @@ main {
     padding: 20px;
 }
 
-#manuscript-head {
-    text-decoration: none;
-    color: white;
-
+#manuscript-head a {
+    font-family: 'Playfair Display', serif; /* Elegant serif font */
+    font-size: 28px; /* Adjust size for readability */
+    font-weight: 700; /* Makes it stand out */
+    font-style: italic; /* Keep the historical elegance */
+    text-decoration: none; /* Removes underline */
+    color: #ffffff; /* Matches header text */
+    letter-spacing: 1px; /* Slight spacing for better look */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: color 0.3s ease-in-out;
 }
 
 #manuscript-head a:hover {
@@ -327,16 +348,22 @@ main {
     font-size: 1.0em;
 }
 
-/* Sticky footer styles */
 footer {
-    background: linear-gradient(to right, #1B3A4B, #294f63); /* Deep teal gradient */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Slightly darker shadow */
-    border-bottom: 3px solid #A3C4BC; /* Soft olive accent */    color: #fff;
+    background: linear-gradient(to right, #1B3A4B, #2C4F63); /* Match header */
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    border-top: 3px solid #A3C4BC; /* Match header's border */
+    color: #ffffff;
     text-align: center;
-    padding: 10px;
+    padding: 10px 30px; /* Same padding as header */
+    height: 60px; /* Match header height */
     position: relative;
-    width: 100%;
+    bottom: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
 }
+
 
 /* Clear filters button */
 #clear-filters {
@@ -506,10 +533,14 @@ th {
 }
 
 /* Main Content Wrapper */
+/* Ensure content pushes footer down */
 #content-wrap {
-    display: flex; /* Use flexbox for layout */
-    padding: 10px; /* Padding for content */
+    display: flex;
+    flex-grow: 1; /* Allows content to take up space */
+    width: 100%; /* Ensure full width */
+    min-height: calc(100vh - 60px); /* Prevents footer from floating */
 }
+
 
 /* Sidebar adjustments */
 #filter-sidebar {
@@ -598,7 +629,7 @@ th {
 
 /* General styling for the manuscript info section */
 .manuscript-info {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Poppins', sans-serif; /* Modern & clean */
     margin: 20px;
     margin-left: 10px;
 }
@@ -808,8 +839,9 @@ th {
 
 /* General body styling */
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+    font-family: 'Poppins', sans-serif; /* Modern & clean */
+    margin: 0;
+    padding: 0;
     background-color: #f8f8f8; /* Light gray background to match the rest of your site */
 }
 
