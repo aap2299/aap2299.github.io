@@ -145,6 +145,54 @@ main {
     padding: 20px;
 }
 
+/* Section Container */
+#page-links {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+/* Grid Container */
+.link-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Auto adjusts for screen size */
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+/* Individual Clickable Boxes */
+.link-box {
+    background: linear-gradient(to right, #1B3A4B, #2C4F63); /* Match theme colors */
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 20px;
+    border-radius: 12px; /* Smoother rounded edges */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between icon & text */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    min-height: 60px; /* Ensure all boxes are the same height */
+}
+
+/* Hover Effect */
+.link-box:hover {
+    transform: translateY(-3px); /* Slight lift effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background: #A3C4BC; /* Lighter hover effect */
+    color: #1B3A4B;
+}
+
+/* FontAwesome Icon Styling */
+.link-box i {
+    font-size: 22px;
+}
+
+
 /* Dropdown styles */
 .dropdown {
     position: relative;
@@ -340,7 +388,19 @@ main {
     text-decoration: none; /* Optional: Keep or remove underline */
 }
 
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+    #manuscript-head a {
+        font-size: 22px; /* Slightly smaller */
+    }
+}
 
+/* Small screens (phones) */
+@media (max-width: 480px) {
+    #manuscript-head a {
+        font-size: 18px; /* Reduce further for mobile */
+    }
+}
 
 /* Manuscript count */
 #manuscript-count {
