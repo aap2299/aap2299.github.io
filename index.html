@@ -8,69 +8,35 @@
 
     <link rel="stylesheet" href="styles.css">
 
+    <!-- FontAwesome for the hamburger icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <h1 id="manuscript-head">
-                <a href="index.html">De Regimine Principum</a>
-            </h1>
-            
-            
-            <!-- Hamburger icon next to the title -->
-            <div id="hamburger-icon" onclick="toggleSidebar()">☰</div>
-        </div>
-    </header>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="check-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo"><a href="index.html"><i>Beati Hieronymi Vita: Plerosque nimirum</i></a></label>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="chapters.html">Text</a></li>
+          <li><a href="manuscripts.html">Manuscript List</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="abbreviations.html">Versions</a></li>
+          <li><a href="compare.html">Compare Versions</a></li>
+        </ul>
+      </nav>
+      
+      
 
-    <!-- Sidebar menu (initially hidden) -->
-    <nav id="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">×</a> <!-- Close button -->
-        <a href="index.html">Home</a>
-        <a href="chapters.html">Text</a>
-        <a href="compare.html">Compare texts</a>
-
-
-        <!-- Dropdown menu -->
-        <div class="dropdown">
-            <button class="dropbtn" onclick="toggleDropdown(event)">Manuscripts<span class="arrow">&#9662;</span></button>
-            <div class="dropdown-content">
-                <a href="manuscripts.html">Manuscript List</a>
-                <a href="sigla.html">Manuscript Sigla</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="abbreviations.html">Abbreviated Manuscripts</a>
-
-            </div>
-        </div>
-    </nav>
-
+ 
     <main>
-        <section id="page-links">
-            <div class="link-container">
-
-                <a href="chapters.html" class="link-box">
-                    <i class="fas fa-align-left"></i> Text
-                </a>
-                <a href="manuscripts.html" class="link-box">
-                    <i class="fas fa-book-open"></i> Manuscript List
-                </a>
-                <a href="abbreviations.html" class="link-box">
-                    <i class="fas fa-font"></i> Abbreviations
-                </a>
-               
-                <a href="sigla.html" class="link-box">
-                    <i class="fas fa-tags"></i> Manuscript Sigla
-                </a>
-                <a href="compare.html" class="link-box">
-                    <i class="fas fa-exchange-alt"></i> Compare Texts
-                </a>
-                <a href="gallery.html" class="link-box">
-                    <i class="fas fa-images"></i> Gallery
-                </a>
-            </div>
-        </section>
-        
-        <!-- Add FontAwesome for Icons -->
-        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
         
         
     </main>

@@ -3,39 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
+
+    <!-- FontAwesome for the hamburger icon -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <h1 id="manuscript-head">
-                <a href="index.html"><i>De Regimine Principum</i></a>
-            </h1>
-            <div id="hamburger-icon" onclick="toggleSidebar()">☰</div>
-        </div>
-    </header>
-
-    <nav id="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">×</a>
-        <a href="index.html">Home</a>
-        <a href="chapters.html">Text</a>
-        <a href="compare.html">Compare texts</a>
-
-
-        
-        <div class="dropdown">
-            <button class="dropbtn" onclick="toggleDropdown(event)">Manuscripts<span class="arrow">&#9662;</span></button>
-            <div class="dropdown-content">
-                <a href="manuscripts.html">Manuscript List</a>
-                <a href="sigla.html">Manuscript Sigla</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="abbreviations.html">About</a>
-            </div>
-        </div>
-    </nav>
-
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="check-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo"><a href="index.html"><i>Beati Hieronymi Vita: Plerosque nimirum</i></a></label>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a   href="chapters.html">Text</a></li>
+          <li><a href="manuscripts.html">Manuscript List</a></li>
+          <li><a class="active" href="gallery.html">Gallery</a></li>
+          <li><a href="abbreviations.html">Versions</a></li>
+          <li><a href="compare.html">Compare Versions</a></li>
+        </ul>
+      </nav>
+      
 
 
     <main class="clearfix">
@@ -63,12 +60,7 @@
                 <option value="s. 14">s. 14</option>
                 <option value="s. 15">s. 15</option>
             </select>
-            <select id="filter-language">
-                <option value="">Select Language</option>
-                <option value="Latin">Latin</option>
-                <option value="English">English</option>
-                <option value="French">French</option>
-            </select>
+           
 
              <!-- Button to toggle Advanced Filters -->
     <button class="toggle-advanced-filters">Advanced Filters ▼</button>

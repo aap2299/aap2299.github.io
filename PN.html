@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manuscripts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--page container to separate footer-->
+    <div id="page-container"> 
+        <header>
+            <div class="header-container">
+                <h1 id="manuscript-head">
+                    <a href="index.html"><i>Plerosque nimirum</i></a>
+                </h1>
+                
+                <!-- Hamburger icon next to the title -->
+                <div id="hamburger-icon" onclick="toggleSidebar()">☰</div>
+            </div>
+        </header>
+    
+        <!-- Sidebar menu (initially hidden) -->
+        <nav id="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">×</a> <!-- Close button -->
+            <a href="index.html">Home</a>
+            <a href="chapters.html">Text</a>
+            <a href="compare.html">Compare texts</a>
+
+
+            
+    
+            <!-- Dropdown menu -->
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown(event)">Manuscripts<span class="arrow">&#9662;</span></button>
+                <div class="dropdown-content">
+                    <a href="manuscripts.html">Manuscript List</a>
+                    <a href="sigla.html">Manuscript Sigla</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="abbreviations.html">About</a>
+                    <!-- Add more options as needed -->
+                </div>
+            </div>
+        </nav>
+ 
+    <div id="content">
+        <!-- Content will be loaded dynamically here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

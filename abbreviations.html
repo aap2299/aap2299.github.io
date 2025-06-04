@@ -3,21 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
+
+    <!-- FontAwesome for the hamburger icon -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <h1 id="manuscript-head">
-                <a href="index.html"><i>De Regimine Principum</i></a>
-            </h1>
-            
-            <!-- Hamburger icon next to the title -->
-            <div id="hamburger-icon" onclick="toggleSidebar()">☰</div>
-        </div>
-    </header>
-
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="check-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo"><a href="index.html"><i>Beati Hieronymi Vita: Plerosque nimirum</i></a></label>
+        <ul>
+          <li><a  href="index.html">Home</a></li>
+          <li><a href="chapters.html">Text</a></li>
+          <li><a href="manuscripts.html">Manuscript List</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a class="active" href="abbreviations.html">Versions</a></li>
+          <li><a href="compare.html">Compare Versions</a></li>
+        </ul>
+      </nav>
+      
+      
     <!-- Sidebar menu (initially hidden) -->
     <nav id="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">×</a> <!-- Close button -->
@@ -42,233 +58,140 @@
 
     <section id="about">
         <div class="manuscript-info">
-            <h2>Abbreviated Texts</h2>
+            
     
             <!-- Tab navigation -->
             <div class="tab">
-                <button class="tablinks" onclick="openTab(event, 'Omissions')">Omissions</button>
-                <button class="tablinks" onclick="openTab(event, 'Abridgements')">Abridgements</button>
-                <button class="tablinks" onclick="openTab(event, 'Fragments')">Fragments and Excerpts</button>
-                <button class="tablinks" onclick="openTab(event, 'Tables')">Tables</button>
+                <button class="tablinks" onclick="openTab(event, 'BHL3870')"><i>BHL</i> 3870</button>
+
+                <button class="tablinks" onclick="openTab(event, 'BHL3871')"><i>BHL</i> 3871</button>
+                <button class="tablinks" onclick="openTab(event, 'BHL3872')"><i>BHL</i> 3872</button>
+                <button class="tablinks" onclick="openTab(event, 'Interpolatedversions')">Interpolated Texts</button>
+                <button class="tablinks" onclick="openTab(event, 'Incomplete')">Incomplete Texts</button>
                 
                 <!-- Add more tabs -->
             </div>
     
             <!-- Tab content -->
-            <div id="Omissions" class="tabcontent">
-                <h3>Book 3 omitted</h3>
+            <div id="BHL3871" class="tabcontent">
+             
+
+            </div>
+
+            <div id="BHL3870" class="tabcontent">
+                <h3>Interpolations from <i>Hieronymus noster</i></h3>
                 <ul>
-                    <li><a href="manuscript.html?id=14">MS 389</a></li>
-                    <li><a href="manuscript.html?id=48">Urb.lat.1376</a></li>
-                    <li><a href="manuscript.html?id=53">Vat.lat.4267</a></li>
+                    <li><a href="manuscript.html?id=5">Latin 11750</a></li>
+                    <li><a href="manuscript.html?id=33">MS 26</a></li>
+                    <li><a href="manuscript.html?id=53">Latin 1890</a></li>
+                    <li><a href="manuscript.html?id=53">Latin 14364</a></li>
+
+
                 </ul>
 
-                <h3>Books 1 and 3 omitted</h3>
-                <ul>
-                    <li><a href="manuscript.html?id=65">MS. theol. lat. fol. 490</a></li>
-                </ul>
-                
-                <h3>Books 2 and 3 omitted</h3>
-                <ul>
-                    <li><a href="manuscript.html?id=90">Mscr.Dresd.A.61</a></li>
-                </ul>
-
-                <h3>Damaged/missing sections</h3>
-            <ul>
-                <li><a href="manuscript.html?id=64">MS 2</a></li>
-            </ul>
-
-            <ul>
-                <li><a href="manuscript.html?id=69">Plut.31.sin.8</a><p>Starts from 1.1.27</p></li>
-            </ul>
-
-            <ul>
-                <li><a href="manuscript.html?id=92">M.III.20</a><p>missing 1.1 and first 28 chapters of 1.2</p></li>
-            </ul>
-
-            <ul>
-                <li><a href="manuscript.html?id=31">Fiesolano 156</a><p>Missing chapters throughout</p></li></li>
-            </ul>
-
-            <ul>
-                <li><a href="manuscript.html?id=115">H. V. 24</a><p>Damaged in fire</p></li></li>
-            </ul>
 
             </div>
 
             
     
-            <div id="Abridgements" class="tabcontent">
-                <h3>Abridgement by <a target="blank" href="https://studium--parisiense-univ--paris1-fr.translate.goog/individus/51484-leoninusdepadua?_x_tr_sch=http&_x_tr_sl=fr&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=sc">M. Leoninus de Padua </a></h3>
+            <div id="Interpolatedversions" class="tabcontent">
+               
+
+                <h3><i>Ep.</i>22.30 addition at the end of the text</h3>
                 <ul>
                     <li>
-                        <a href="manuscript.html?id=83">Cod.ms.92</a>
+                        <a href="manuscript.html?id=67">Vat.lat.6074</a>
                     </li>
                     <li>
-                        <a href="manuscript.html?id=85">Msc.hist.185</a>
-                    </li>
-                </ul>
-
-                <h3>Abridgement of entire book</h3>
-                <ul>
-                    <li>
-                        <a href="manuscript.html?id=67">MS 434</a>
-                    </li>
-                    <li>
-                        <a href="manuscript.html?id=71">884</a>
+                        <a href="manuscript.html?id=71">Barb.lat.586</a>
                     </li>
 
                     <li>
-                        <a href="manuscript.html?id=76">urb.lat.1007</a>
+                        <a href="manuscript.html?id=76">Latin 11753</a>
                     </li>
 
                     <li>
-                        <a href="manuscript.html?id=79">Clm 19651</a>
+                        <a href="manuscript.html?id=79">Harley 2802</a>
                         <p>p.83</p> 
                     </li>
                     <li>
-                        <a href="manuscript.html?id=119">1010</a>
+                        <a href="manuscript.html?id=119">Laud Misc 236</a>
                     </li>
                     <li>
-                        <a href="manuscript.html?id=120">368 (40 E 32)</a>
-                    </li>
-                    <li>
-                        <a href="manuscript.html?id=68">Plut 78.10</a><p>Complete up to 1.2.27 and abbreviated after that</p> 
-                    </li>
+    
                 </ul>
 
-                <h3>Abridgement of Books 1 and 2</h3>
+                <h3>Combination of <i>Hieronymus noster</i> and <i>Plerosque nimirum</i></h3>
                 <ul>
                     <li>
-                        <a href="manuscript.html?id=21">Ms. Theol. 2º 77</a>
+                        <a href="manuscript.html?id=21">Harley 3044</a>
+            
                     </li>
+                    <li>
+                        <a href="manuscript.html?id=21">Vat.lat.5052</a>
+                    </li>
+                    <li>
+                        <a href="manuscript.html?id=21">Add. 18628</a>
+                    </li>
+
                 </ul>
-
-                <h3>Bologna Abridgement</h3>
-                <ul>
-                    <li>
-                        <a href="manuscript.html?id=76">Urb.lat.1007</a>
-                    </li>
-                    <li>
-                        <a href="manuscript.html?id=116">1512</a>
-                    </li>
-                </ul>
-
-                <h3>Abridgement (2)</h3>
-                <ul>
-                    <li>
-                        <a href="manuscript.html?id=117">γ.Η.7.43</a>
-                    </li>
-                    <li>
-                        <a href="manuscript.html?id=118">Lat.Ι.13</a>
-                    </li>
-                </ul>
-
-                <h3>Abridgements?</h3>
-                <ul>
-                    <li>
-                        <a href="manuscript.html?id=130">Latin 2191</a>
-                    </li>
-                    <li>
-                        <a href="manuscript.html?id=132">Latin 6697</a>
-                    </li>
-                    <li>
-                        <a href="manuscript.html?id=133">Royal 12.B.XXI </a>
-                    </li>
-                    
-                </ul>
-
-               
-
-
-
             </div>
 
     
-            <div id="Fragments" class="tabcontent">
-                <h3>Fragments</h3>
+            <div id="BHL3872" class="tabcontent">
+                <h3>With <i>Hieronymus noster</i></h3>
                 <ul>
-                    <li><a href="manuscript.html?id=66">B.15.20</a> <p>First three chapters</p>
+                    <li><a href="manuscript.html?id=66">Add. 10933</a> <p>Expl. asserendo narrantur</p>
                     </li>
     
                 
-                        <li><a href="manuscript.html?id=70">MS 140</a> <p>endpaper</p></li>
+                        <li><a href="manuscript.html?id=70">Arundel 91</a> <p>runs to the end of <i>Plerosque nimirum</i></p></li>
     
-                        <li><a href="manuscript.html?id=72">UBU HS. 59</a> </li>
+                        <li><a href="manuscript.html?id=72">Tiberius D.IV</a> <p>Runs to the end of <i>Plerosque nimirum</i></p> </li>
     
-                        <li><a href="manuscript.html?id=99">Lat. 2925</a> <p></p></li>
+                        <li><a href="manuscript.html?id=99">MS 71</a> <p>Expl. asserendo narrantur</p></li>
     
-                        <li><a href="manuscript.html?id=74">Vat.lat.770</a> <p>prologue</p></li>
+                        <li><a href="manuscript.html?id=74">Reg.Lat.488</a><p>Runs to the end of <i>Plerosque nimirum</i></p></li>
     
-                        <li><a href="manuscript.html?id=75">Vat.lat.810</a> <p>3.2.29 and 3.3.18</p></li>
+                        <li><a href="manuscript.html?id=75">Vat.lat.641</a> <p>Runs to the end of <i>Plerosque nimirum</i></p></li>
                         
-                        <li><a href="manuscript.html?id=73">838</a> <p>3f. at end of the text</p></li>
-                   
+                        <li><a href="manuscript.html?id=73">Latin 5329</a> <p>Runs to the end of <i>Plerosque nimirum</i></p></li>
+                       
+                        <li><a href="manuscript.html?id=73">Latin 12606</a> <p>Runs to the end of <i>Plerosque nimirum</i></p></li>
+                        <li><a href="manuscript.html?id=73">Latin 8995</a> <p>Adjoining sentence after <i>Hieronymus noster</i></p></li>
+                        <li><a href="manuscript.html?id=73">Latin 11885</a> <p>Adjoining sentence after <i>Hieronymus noster</i></p></li>
+
                 </ul>
 
-                <h3>Excerpts</h3>
+                <h3>Independent</h3>
                 <ul>
-                    <li><a href="manuscript.html?id=82">MSS/9513
-                    </a><p>Book of quotes from DRP</p> 
+                    <li><a href="manuscript.html?id=82">MS 36
+                    </a> <p>Runs to the end of <i>Plerosque nimirum</i></p> 
                     </li>
 
-                    <li><a href="manuscript.html?id=99">Lat.2925
-                    </a><p>Excerpt from Book 1</p> 
+                    <li><a href="manuscript.html?id=99">MS 20
+                    </a><p>Runs to the end of <i>Plerosque nimirum</i></p> 
                     </li>
 
-                    <li><a href="manuscript.html?id=108">J 391
-                    </a><p>Excerpt from Book 1</p> 
+                    <li><a href="manuscript.html?id=108">Latin 5588
+                    </a><p>Abbreviated text</p> 
                     </li>
 
-                    <li><a href="manuscript.html?id=84">MS 67.3
-                    </a><p></p> 
+                    <li><a href="manuscript.html?id=84">Latin 5718
+                    </a><p>Runs to the end of <i>Plerosque nimirum</i></p> 
+                    </li>
+
+                    <li><a href="manuscript.html?id=84">Vat.lat.1869
+                    </a><p>Runs to the end of <i>Plerosque nimirum</i></p> 
                     </li>
     
     
-                </ul>
-                <h3>Incorporated into other texts</h3>
-                <ul>
-                    <li><a href="manuscript.html?id=77">2137</a> <p>Part of a compendium of moral philosophy</p></li>
-
-                    <li><a href="manuscript.html?id=131">6466</a> <p>Part of a compendium of moral philosophy</p></li>
     
-                    <li><a href="manuscript.html?id=81">Cod. Guelf. 428 Helmst</a> <p>Part of a sermon</p></li>
-    
-                    <li><a href="manuscript.html?id=86">Ms. Ham. 540</a> <p>Florilegium</p></li>
-
-                    <li><a href="manuscript.html?id=109">nd.Hs.36</a> <p>Part of a <i> Speculum consulum</i></p></li>
-                </ul>
+            
             </div>
 
-            <div id="Tables" class="tabcontent">
-                <h3>Chapter</h3>
-                <ul>
-                    <li><a href="manuscript.html?id=88">Ff.IV.38</a></li>
-            
-    
-                <ul>
-                    <li><a href="manuscript.html?id=89">208</a></li>
-                
-                    <li><a href="manuscript.html?id=95">Royal 5.C.III</a></li>
+            <div id="Incomplete" class="tabcontent">
              
-    
-                    <li><a href="manuscript.html?id=112">MS C.III.13</a></li>
-            
-    
-               
-                    <li><a href="manuscript.html?id=103">Ott.lat.2071</a></li>
-                </ul>
-
-                <h3>Alphabetical</h3>
-                <ul>
-                    <li>
-                        <a href="manuscript.html?id=91">MS 106</a>
-                    </li>
-
-                    <li>
-                        <a href="manuscript.html?id=94">Arundel 384</a>
-                    </li>
-                </ul>
             </div>
         </div>
     </section>
