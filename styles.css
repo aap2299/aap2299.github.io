@@ -1358,4 +1358,23 @@ a.tagged {
   }
   
   
+  .stemma-wrapper {
+    max-width: 2000px;
+    margin: 0 auto;
+  }
+  
+  .stemma-wrapper svg {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  #stemma-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+  }
+
   
