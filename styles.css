@@ -1377,4 +1377,8 @@ a.tagged {
     border: 1px solid #ccc;
   }
 
+  #edit-btn, #save-btn {
+    display: inline-block !important;
+    margin-top: 10px;
+  }
   
