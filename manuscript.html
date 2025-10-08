@@ -62,22 +62,30 @@
         const saveBtn = document.getElementById('save-btn');
         const desc = document.getElementById('ms-description');
       
-        // 🔹 Example: load manuscript data from JSON (replace this with your own loader)
+        // Load the JSON data
         fetch('manuscripts.json')
           .then(r => r.json())
           .then(data => {
             const urlParams = new URLSearchParams(window.location.search);
-            const id = urlParams.get('id');
-            const manuscript = data[id];
+            const id = parseInt(urlParams.get('id')); // convert ?id=0 to number
+            const manuscript = data.find(m => m.id === id); // match numeric ID
       
             if (manuscript) {
-              document.getElementById('ms-title').innerText = manuscript.classmark;
-              document.getElementById('ms-classmark').innerText = manuscript.classmark;
+              // ✅ Use "shelfmark" (not classmark)
+              document.getElementById('ms-title').innerText = manuscript.shelfmark;
+              document.getElementById('ms-classmark').innerText = manuscript.shelfmark;
               desc.innerText = manuscript.description;
+            } else {
+              document.getElementById('ms-title').innerText = "Manuscript not found";
+              desc.innerText = "";
             }
+          })
+          .catch(err => {
+            console.error('Error loading manuscript data:', err);
+            document.getElementById('ms-title').innerText = "Error loading data";
           });
       
-        // 🔹 Make editable
+        // Make the description editable
         editBtn.addEventListener('click', () => {
           desc.contentEditable = "true";
           desc.focus();
@@ -85,11 +93,11 @@
           saveBtn.style.display = "inline-block";
         });
       
-        // 🔹 Save edits (send to your Netlify Function)
+        // Save updated description
         saveBtn.addEventListener('click', async () => {
           const newText = desc.innerText;
           const id = new URLSearchParams(window.location.search).get('id');
-          
+      
           await fetch('/.netlify/functions/update-manuscript', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
