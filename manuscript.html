@@ -35,85 +35,22 @@
       
       
 
-      <section id="manuscript-details">
+    <section id="manuscript-details">
         <nav class="breadcrumbs">
-          <a href="index.html">Home</a> &gt; 
-          <a href="manuscripts.html">Manuscripts</a> &gt; 
-          <span id="ms-title"></span>
-        </nav>
-      
-        <!-- Manuscript info -->
-        <div id="ms-info">
-          <h2 id="ms-classmark"></h2>
-          <p id="ms-description" contenteditable="false"></p>
-          <button id="edit-btn">Edit</button>
-          <button id="save-btn" style="display:none;">Save</button>
-        </div>
-      </section>
-      
+            <a href="index.html">Home</a> &gt; 
+            <a href="manuscripts.html">Manuscripts</a> &gt; 
+            <span>${manuscript.shelfmark}</span>
+          </nav>
+          
+        <!-- Manuscript details will be loaded here via JavaScript/JSON (id used in js to identify page) -->
+    </section>
+
     <footer>
         <p>&copy; 2024</p>
     </footer?>
-   
+    <script src="mspage-script.js"></script>
+    <script src="script.js"></script>
     
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const editBtn = document.getElementById('edit-btn');
-        const saveBtn = document.getElementById('save-btn');
-        const desc = document.getElementById('ms-description');
-      
-        // Load the JSON data
-        fetch('manuscripts.json')
-          .then(r => r.json())
-          .then(data => {
-            const urlParams = new URLSearchParams(window.location.search);
-            const id = parseInt(urlParams.get('id')); // convert ?id=0 to number
-            const manuscript = data.find(m => m.id === id); // match numeric ID
-      
-            if (manuscript) {
-              // ✅ Use "shelfmark" (not classmark)
-              document.getElementById('ms-title').innerText = manuscript.shelfmark;
-              document.getElementById('ms-classmark').innerText = manuscript.shelfmark;
-              desc.innerText = manuscript.description;
-            } else {
-              document.getElementById('ms-title').innerText = "Manuscript not found";
-              desc.innerText = "";
-            }
-          })
-          .catch(err => {
-            console.error('Error loading manuscript data:', err);
-            document.getElementById('ms-title').innerText = "Error loading data";
-          });
-      
-        // Make the description editable
-        editBtn.addEventListener('click', () => {
-          desc.contentEditable = "true";
-          desc.focus();
-          editBtn.style.display = "none";
-          saveBtn.style.display = "inline-block";
-        });
-      
-        // Save updated description
-        saveBtn.addEventListener('click', async () => {
-          const newText = desc.innerText;
-          const id = new URLSearchParams(window.location.search).get('id');
-      
-          await fetch('/.netlify/functions/update-manuscript', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ manuscriptId: id, newDescription: newText })
-          });
-      
-          desc.contentEditable = "false";
-          saveBtn.style.display = "none";
-          editBtn.style.display = "inline-block";
-          alert('Changes saved!');
-        });
-      });
-      </script>
-      
-      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
 
 </body>
 </html>
