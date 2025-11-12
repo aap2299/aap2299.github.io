@@ -52,7 +52,11 @@ async function loadManuscripts() {
                     data-illuminated="${manuscript.illuminated}"
                     data-provenance="${manuscript.provenance}"
                     data-origin="${manuscript.origin}" 
-                    data-composite="${manuscript.composite === 'yes' ? 'interpolated' : ''}">
+                    data-owners-known="${manuscript.ownersKnown ? manuscript.ownersKnown : ''}"
+                    data-composite="${manuscript.composite === 'yes' ? 'interpolated' : ''}"
+                    data-siglum="${manuscript.siglum ? manuscript.siglum : ''}"          
+                    data-miniature="${manuscript.miniature ? manuscript.miniature : ''}" 
+                    >
                    
 
 
@@ -127,6 +131,8 @@ function loadManuscriptDetails() {
                     <div class="more-details hidden">
                         <p><strong>Origin:</strong> ${manuscript.origin}</p>
                         <p><strong>Provenance:</strong> ${manuscript.provenance}</p>
+                        <p><strong>Owners:</strong> ${ manuscript.ownersKnown === "yes" ? "Yes" :(manuscript.ownersKnown === "no" ? "No" : "Unknown")}</p>${manuscript.ownersKnown === "yes" ? `<ul>${(Array.isArray(manuscript.owners) ? manuscript.owners : (manuscript.owners ? [manuscript.owners] : [])).map(o => `<li>${o}</li>`).join('') || `<li>No specific owners listed</li>`}</ul>` : '' }
+
                         <p><strong>Complete:</strong> ${manuscript.complete === "yes" ? "Yes" : "No"}</p>
                         ${manuscript.complete === "no" ? `
                                 <ul>
@@ -136,6 +142,7 @@ function loadManuscriptDetails() {
                                 </ul>
                             ` : ''}
                         <p><strong>Illuminated:</strong> ${manuscript.illuminated === "yes" ? "Yes" : "No"}</p>
+                        <p><strong>Miniature:</strong> ${manuscript.miniature === "yes" ? "Yes" :(manuscript.miniature === "no" ? "No" : "Unknown")}</p>
                         <p><strong>Interpolated:</strong> ${manuscript.composite === "yes" ? "Yes" : "No"}</p>
                          ${manuscript.composite === "yes" && manuscript.texts && manuscript.texts.length > 0 ? `
         
@@ -149,6 +156,8 @@ function loadManuscriptDetails() {
                        
                               
                         <p><strong>Digitised:</strong> ${manuscript.digitised === "yes" ? "Yes" : "No"}</p>
+                                                      <p><strong>Siglum:</strong> ${manuscript.siglum ? manuscript.siglum : '—'}</p>
+
                         <p><strong>Group:</strong> ${manuscript.group}</p>
                 <p><strong>Further Information:</strong></p>
 <ul>
