@@ -1,10 +1,22 @@
 {
     "catalog": [
       {
-        "manifestId": "https://dms-data.stanford.edu/data/manifests/Parker/qx516qb5271/manifest.json"
+        "manifestId": "https://digi.vatlib.it/iiif/MSS_Vat.lat.10671/manifest.json"
       },
       {
-        "manifestId": "https://digi.vatlib.it/iiif/MSS_Pal.lat.727/manifest.json"
+        "manifestId": "https://digi.vatlib.it/iiif/MSS_Vat.lat.4267/manifest.json"
+      },
+      {
+        "manifestId": "https://digi.vatlib.it/iiif/MSS_Vat.lat.843/manifest.json"
+      },
+      {
+        "manifestId": "https://digi.vatlib.it/iiif/MSS_Vat.lat.842/manifest.json"
+      },
+      {
+        "manifestId": "https://digi.vatlib.it/iiif/MSS_Vat.lat.841/manifest.json"
+      },
+      {
+        "manifestId": "https://digi.vatlib.it/iiif/MSS_Vat.lat.590/manifest.json"
       },
       {
         "manifestId": "https://iiif.harvardartmuseums.org/manifests/object/299843"
@@ -54,52 +66,100 @@
       }
     ],
     "companionWindows": {
-      "cw-ee12211e-41c8-48fa-8a44-d6daa81a96f8": {
+      "cw-2f17ec62-e9de-4bf8-a912-5e9b34ce8070": {
         "content": "info",
         "default": true,
-        "id": "cw-ee12211e-41c8-48fa-8a44-d6daa81a96f8",
+        "id": "cw-2f17ec62-e9de-4bf8-a912-5e9b34ce8070",
         "position": "left"
       },
-      "cw-2b1e79ec-3a46-4ef7-940d-02a1095c0239": {
+      "cw-692d0d13-25f9-41f7-9d3c-fc0ef0cb6542": {
         "content": "thumbnailNavigation",
         "default": true,
-        "id": "cw-2b1e79ec-3a46-4ef7-940d-02a1095c0239",
+        "id": "cw-692d0d13-25f9-41f7-9d3c-fc0ef0cb6542",
         "position": "off"
       },
-      "cw-7dfc7621-35fe-4c6c-8972-86d2eba2c88a": {
+      "cw-10adc08b-e700-40ef-b201-3d8a9d0d4dac": {
         "content": "info",
         "default": true,
-        "id": "cw-7dfc7621-35fe-4c6c-8972-86d2eba2c88a",
+        "id": "cw-10adc08b-e700-40ef-b201-3d8a9d0d4dac",
         "position": "left"
       },
-      "cw-883d9795-b9c7-4006-a2cc-e6a49a57881f": {
+      "cw-d5aa2cac-ec6d-4347-8cc6-7662f9304fe7": {
         "content": "thumbnailNavigation",
         "default": true,
-        "id": "cw-883d9795-b9c7-4006-a2cc-e6a49a57881f",
+        "id": "cw-d5aa2cac-ec6d-4347-8cc6-7662f9304fe7",
         "position": "far-bottom"
       },
-      "cw-0cf87740-853b-453e-ba6f-be720db55511": {
+      "cw-118d270b-3279-48a2-95e4-db34c6c58d2c": {
         "content": "info",
         "default": true,
-        "id": "cw-0cf87740-853b-453e-ba6f-be720db55511",
+        "id": "cw-118d270b-3279-48a2-95e4-db34c6c58d2c",
         "position": "left"
       },
-      "cw-0227bd3d-86d8-486c-ba58-944b491534c1": {
+      "cw-afda2644-02d2-41c5-9fe2-f2bf94d4114f": {
         "content": "thumbnailNavigation",
         "default": true,
-        "id": "cw-0227bd3d-86d8-486c-ba58-944b491534c1",
+        "id": "cw-afda2644-02d2-41c5-9fe2-f2bf94d4114f",
         "position": "off"
       },
-      "cw-0a0422a8-7bbb-4948-bdf6-e4d306e4ca28": {
+      "cw-97171cbd-a9f3-4b18-bab3-2724334e57d3": {
         "content": "info",
         "default": true,
-        "id": "cw-0a0422a8-7bbb-4948-bdf6-e4d306e4ca28",
+        "id": "cw-97171cbd-a9f3-4b18-bab3-2724334e57d3",
         "position": "left"
       },
-      "cw-e1cd5ba3-b2ba-4466-a34b-9fbb46edc224": {
+      "cw-9e5e0d6a-e513-4024-ab43-4f6d277d2555": {
         "content": "thumbnailNavigation",
         "default": true,
-        "id": "cw-e1cd5ba3-b2ba-4466-a34b-9fbb46edc224",
+        "id": "cw-9e5e0d6a-e513-4024-ab43-4f6d277d2555",
+        "position": "off"
+      },
+      "cw-6cfb91ca-d996-4c90-9773-e9c3e23697ab": {
+        "content": "info",
+        "default": true,
+        "id": "cw-6cfb91ca-d996-4c90-9773-e9c3e23697ab",
+        "position": "left"
+      },
+      "cw-61206738-15ce-42aa-8481-959a2f33f8df": {
+        "content": "thumbnailNavigation",
+        "default": true,
+        "id": "cw-61206738-15ce-42aa-8481-959a2f33f8df",
+        "position": "off"
+      },
+      "cw-65d7e81d-569e-4664-a57f-7f8c1624f80f": {
+        "content": "info",
+        "default": true,
+        "id": "cw-65d7e81d-569e-4664-a57f-7f8c1624f80f",
+        "position": "left"
+      },
+      "cw-2e725736-6dea-42fa-a981-f25112a1a1ab": {
+        "content": "thumbnailNavigation",
+        "default": true,
+        "id": "cw-2e725736-6dea-42fa-a981-f25112a1a1ab",
+        "position": "off"
+      },
+      "cw-72cb94f9-6e2a-4b7f-b5d4-3267a2fe1fc8": {
+        "content": "info",
+        "default": true,
+        "id": "cw-72cb94f9-6e2a-4b7f-b5d4-3267a2fe1fc8",
+        "position": "left"
+      },
+      "cw-a186d1ce-7f4d-4fe7-b1d8-57dadfaed428": {
+        "content": "thumbnailNavigation",
+        "default": true,
+        "id": "cw-a186d1ce-7f4d-4fe7-b1d8-57dadfaed428",
+        "position": "off"
+      },
+      "cw-b50a1044-b7f5-40f2-80d5-36c4bc3e08c4": {
+        "content": "info",
+        "default": true,
+        "id": "cw-b50a1044-b7f5-40f2-80d5-36c4bc3e08c4",
+        "position": "left"
+      },
+      "cw-87b76328-e9d9-4dba-82f7-704ed4866ba8": {
+        "content": "thumbnailNavigation",
+        "default": true,
+        "id": "cw-87b76328-e9d9-4dba-82f7-704ed4866ba8",
         "position": "off"
       }
     },
@@ -570,7 +630,7 @@
         "draggingEnabled": true,
         "exposeModeOn": false,
         "height": 5000,
-        "id": "3fb79719-d095-4e7b-8f52-7809d08b3fab",
+        "id": "59c1beee-364e-4953-8371-b3ad447cc9b0",
         "isWorkspaceAddVisible": false,
         "showZoomControls": true,
         "type": "mosaic",
@@ -699,87 +759,233 @@
       "id": "mirador"
     },
     "elasticLayout": {
-      "window-2ad0d441-3ff2-48f0-92e2-0202430405d0": {
-        "windowId": "window-2ad0d441-3ff2-48f0-92e2-0202430405d0",
+      "window-f08c9879-36fd-4128-a34c-40a26b7a563d": {
+        "windowId": "window-f08c9879-36fd-4128-a34c-40a26b7a563d",
         "height": 400,
         "width": 480,
         "x": 200,
         "y": 200
       },
-      "window-7aec0b1e-8b11-4150-b628-c952566266c6": {
-        "windowId": "window-7aec0b1e-8b11-4150-b628-c952566266c6",
+      "window-437772ac-3d93-44c6-858f-bb0db7b92f76": {
+        "windowId": "window-437772ac-3d93-44c6-858f-bb0db7b92f76",
         "height": 400,
         "width": 480,
         "x": 230,
         "y": 250
+      },
+      "window-82ad4f22-11eb-43b1-bdc9-3d776df8c621": {
+        "windowId": "window-82ad4f22-11eb-43b1-bdc9-3d776df8c621",
+        "height": 400,
+        "width": 480,
+        "x": 260,
+        "y": 300
+      },
+      "window-6da7101b-5103-475e-929d-9fba7617f324": {
+        "windowId": "window-6da7101b-5103-475e-929d-9fba7617f324",
+        "height": 400,
+        "width": 480,
+        "x": 290,
+        "y": 350
+      },
+      "window-99201b68-2cd7-4d12-9b88-34409c5fefec": {
+        "windowId": "window-99201b68-2cd7-4d12-9b88-34409c5fefec",
+        "height": 400,
+        "width": 480,
+        "x": 320,
+        "y": 400
+      },
+      "window-1f635c8c-2081-41d8-9e2d-0ebf61836cb3": {
+        "windowId": "window-1f635c8c-2081-41d8-9e2d-0ebf61836cb3",
+        "height": 400,
+        "width": 480,
+        "x": 350,
+        "y": 450
       }
     },
     "layers": {},
     "manifests": {},
     "viewers": {
-      "window-2ad0d441-3ff2-48f0-92e2-0202430405d0": {
+      "window-f08c9879-36fd-4128-a34c-40a26b7a563d": {
         "flip": false,
         "rotation": 0,
-        "x": 921,
-        "y": 1216,
-        "zoom": 0.00017579003598740438
+        "x": 943,
+        "y": 1406,
+        "zoom": 0.0010814631044114703
       },
-      "window-7aec0b1e-8b11-4150-b628-c952566266c6": {
+      "window-437772ac-3d93-44c6-858f-bb0db7b92f76": {
         "flip": false,
         "rotation": 0,
-        "x": 3151,
-        "y": 4641,
-        "zoom": 0.00011914034910705276
+        "x": 1333,
+        "y": 1288,
+        "zoom": 0.0002055964336091287
+      },
+      "window-82ad4f22-11eb-43b1-bdc9-3d776df8c621": {
+        "flip": false,
+        "rotation": 0,
+        "x": 770,
+        "y": 1484,
+        "zoom": 0.0009344523045232576
+      },
+      "window-6da7101b-5103-475e-929d-9fba7617f324": {
+        "flip": false,
+        "rotation": 0,
+        "x": 490,
+        "y": 1239,
+        "zoom": 0.0013448748043818463
+      },
+      "window-99201b68-2cd7-4d12-9b88-34409c5fefec": null,
+      "window-1f635c8c-2081-41d8-9e2d-0ebf61836cb3": {
+        "flip": false,
+        "rotation": 0,
+        "x": 1325,
+        "y": 1335,
+        "zoom": 0.001936619718309859
       }
     },
     "windows": {
-      "window-2ad0d441-3ff2-48f0-92e2-0202430405d0": {
-        "canvasId": "https://digi.vatlib.it/iiif/MSS_Pal.lat.727/canvas/p0020",
-        "collectionIndex": 0,
-        "companionAreaOpen": false,
-        "companionWindowIds": [
-          "cw-0cf87740-853b-453e-ba6f-be720db55511",
-          "cw-0227bd3d-86d8-486c-ba58-944b491534c1"
-        ],
-        "draggingEnabled": true,
-        "highlightAllAnnotations": false,
-        "id": "window-2ad0d441-3ff2-48f0-92e2-0202430405d0",
-        "manifestId": "https://digi.vatlib.it/iiif/MSS_Pal.lat.727/manifest.json",
-        "maximized": false,
-        "rangeId": null,
-        "rotation": null,
-        "selectedAnnotations": {},
-        "sideBarOpen": true,
-        "sideBarPanel": "info",
-        "thumbnailNavigationId": "cw-0227bd3d-86d8-486c-ba58-944b491534c1",
-        "visibleCanvases": [
-          "https://digi.vatlib.it/iiif/MSS_Pal.lat.727/canvas/p0020",
-          "https://digi.vatlib.it/iiif/MSS_Pal.lat.727/canvas/p0021"
-        ]
-      },
-      "window-7aec0b1e-8b11-4150-b628-c952566266c6": {
-        "canvasId": "https://dms-data.stanford.edu/data/manifests/Parker/qx516qb5271/canvas/canvas-20",
+      "window-f08c9879-36fd-4128-a34c-40a26b7a563d": {
+        "canvasId": "https://digi.vatlib.it/iiif/MSS_Vat.lat.590/canvas/p0191",
         "collectionIndex": 0,
         "companionAreaOpen": true,
         "companionWindowIds": [
-          "cw-0a0422a8-7bbb-4948-bdf6-e4d306e4ca28",
-          "cw-e1cd5ba3-b2ba-4466-a34b-9fbb46edc224"
+          "cw-118d270b-3279-48a2-95e4-db34c6c58d2c",
+          "cw-afda2644-02d2-41c5-9fe2-f2bf94d4114f"
         ],
         "draggingEnabled": true,
         "highlightAllAnnotations": false,
-        "id": "window-7aec0b1e-8b11-4150-b628-c952566266c6",
-        "manifestId": "https://dms-data.stanford.edu/data/manifests/Parker/qx516qb5271/manifest.json",
+        "id": "window-f08c9879-36fd-4128-a34c-40a26b7a563d",
+        "manifestId": "https://digi.vatlib.it/iiif/MSS_Vat.lat.590/manifest.json",
         "maximized": false,
         "rangeId": null,
         "rotation": null,
         "selectedAnnotations": {},
         "sideBarOpen": false,
         "sideBarPanel": "info",
-        "thumbnailNavigationId": "cw-e1cd5ba3-b2ba-4466-a34b-9fbb46edc224",
+        "thumbnailNavigationId": "cw-afda2644-02d2-41c5-9fe2-f2bf94d4114f",
         "visibleCanvases": [
-          "https://dms-data.stanford.edu/data/manifests/Parker/qx516qb5271/canvas/canvas-20",
-          "https://dms-data.stanford.edu/data/manifests/Parker/qx516qb5271/canvas/canvas-21"
-        ]
+          "https://digi.vatlib.it/iiif/MSS_Vat.lat.590/canvas/p0191"
+        ],
+        "view": "single"
+      },
+      "window-437772ac-3d93-44c6-858f-bb0db7b92f76": {
+        "canvasId": "https://digi.vatlib.it/iiif/MSS_Vat.lat.841/canvas/p0142",
+        "collectionIndex": 0,
+        "companionAreaOpen": true,
+        "companionWindowIds": [
+          "cw-97171cbd-a9f3-4b18-bab3-2724334e57d3",
+          "cw-9e5e0d6a-e513-4024-ab43-4f6d277d2555"
+        ],
+        "draggingEnabled": true,
+        "highlightAllAnnotations": false,
+        "id": "window-437772ac-3d93-44c6-858f-bb0db7b92f76",
+        "manifestId": "https://digi.vatlib.it/iiif/MSS_Vat.lat.841/manifest.json",
+        "maximized": false,
+        "rangeId": null,
+        "rotation": null,
+        "selectedAnnotations": {},
+        "sideBarOpen": false,
+        "sideBarPanel": "info",
+        "thumbnailNavigationId": "cw-9e5e0d6a-e513-4024-ab43-4f6d277d2555",
+        "visibleCanvases": [
+          "https://digi.vatlib.it/iiif/MSS_Vat.lat.841/canvas/p0142"
+        ],
+        "view": "single"
+      },
+      "window-82ad4f22-11eb-43b1-bdc9-3d776df8c621": {
+        "canvasId": "https://digi.vatlib.it/iiif/MSS_Vat.lat.842/canvas/p0081",
+        "collectionIndex": 0,
+        "companionAreaOpen": true,
+        "companionWindowIds": [
+          "cw-6cfb91ca-d996-4c90-9773-e9c3e23697ab",
+          "cw-61206738-15ce-42aa-8481-959a2f33f8df"
+        ],
+        "draggingEnabled": true,
+        "highlightAllAnnotations": false,
+        "id": "window-82ad4f22-11eb-43b1-bdc9-3d776df8c621",
+        "manifestId": "https://digi.vatlib.it/iiif/MSS_Vat.lat.842/manifest.json",
+        "maximized": false,
+        "rangeId": null,
+        "rotation": null,
+        "selectedAnnotations": {},
+        "sideBarOpen": false,
+        "sideBarPanel": "info",
+        "thumbnailNavigationId": "cw-61206738-15ce-42aa-8481-959a2f33f8df",
+        "visibleCanvases": [
+          "https://digi.vatlib.it/iiif/MSS_Vat.lat.842/canvas/p0081"
+        ],
+        "view": "single"
+      },
+      "window-6da7101b-5103-475e-929d-9fba7617f324": {
+        "canvasId": "https://digi.vatlib.it/iiif/MSS_Vat.lat.843/canvas/p0127",
+        "collectionIndex": 0,
+        "companionAreaOpen": true,
+        "companionWindowIds": [
+          "cw-65d7e81d-569e-4664-a57f-7f8c1624f80f",
+          "cw-2e725736-6dea-42fa-a981-f25112a1a1ab"
+        ],
+        "draggingEnabled": true,
+        "highlightAllAnnotations": false,
+        "id": "window-6da7101b-5103-475e-929d-9fba7617f324",
+        "manifestId": "https://digi.vatlib.it/iiif/MSS_Vat.lat.843/manifest.json",
+        "maximized": false,
+        "rangeId": null,
+        "rotation": null,
+        "selectedAnnotations": {},
+        "sideBarOpen": false,
+        "sideBarPanel": "info",
+        "thumbnailNavigationId": "cw-2e725736-6dea-42fa-a981-f25112a1a1ab",
+        "visibleCanvases": [
+          "https://digi.vatlib.it/iiif/MSS_Vat.lat.843/canvas/p0127"
+        ],
+        "view": "single"
+      },
+      "window-99201b68-2cd7-4d12-9b88-34409c5fefec": {
+        "canvasId": "https://digi.vatlib.it/iiif/MSS_Vat.lat.4267/canvas/p0114",
+        "collectionIndex": 0,
+        "companionAreaOpen": true,
+        "companionWindowIds": [
+          "cw-72cb94f9-6e2a-4b7f-b5d4-3267a2fe1fc8",
+          "cw-a186d1ce-7f4d-4fe7-b1d8-57dadfaed428"
+        ],
+        "draggingEnabled": true,
+        "highlightAllAnnotations": false,
+        "id": "window-99201b68-2cd7-4d12-9b88-34409c5fefec",
+        "manifestId": "https://digi.vatlib.it/iiif/MSS_Vat.lat.4267/manifest.json",
+        "maximized": false,
+        "rangeId": null,
+        "rotation": null,
+        "selectedAnnotations": {},
+        "sideBarOpen": false,
+        "sideBarPanel": "info",
+        "thumbnailNavigationId": "cw-a186d1ce-7f4d-4fe7-b1d8-57dadfaed428",
+        "visibleCanvases": [
+          "https://digi.vatlib.it/iiif/MSS_Vat.lat.4267/canvas/p0114"
+        ],
+        "view": "gallery"
+      },
+      "window-1f635c8c-2081-41d8-9e2d-0ebf61836cb3": {
+        "canvasId": "https://digi.vatlib.it/iiif/MSS_Vat.lat.10671/canvas/p0080",
+        "collectionIndex": 0,
+        "companionAreaOpen": true,
+        "companionWindowIds": [
+          "cw-b50a1044-b7f5-40f2-80d5-36c4bc3e08c4",
+          "cw-87b76328-e9d9-4dba-82f7-704ed4866ba8"
+        ],
+        "draggingEnabled": true,
+        "highlightAllAnnotations": false,
+        "id": "window-1f635c8c-2081-41d8-9e2d-0ebf61836cb3",
+        "manifestId": "https://digi.vatlib.it/iiif/MSS_Vat.lat.10671/manifest.json",
+        "maximized": false,
+        "rangeId": null,
+        "rotation": null,
+        "selectedAnnotations": {},
+        "sideBarOpen": false,
+        "sideBarPanel": "info",
+        "thumbnailNavigationId": "cw-87b76328-e9d9-4dba-82f7-704ed4866ba8",
+        "visibleCanvases": [
+          "https://digi.vatlib.it/iiif/MSS_Vat.lat.10671/canvas/p0080"
+        ],
+        "view": "single"
       }
     },
     "workspace": {
@@ -787,24 +993,47 @@
       "draggingEnabled": true,
       "exposeModeOn": false,
       "height": 5000,
-      "id": "3fb79719-d095-4e7b-8f52-7809d08b3fab",
+      "id": "85cd84a4-29ac-4852-b067-ee8ea19e6162",
       "isWorkspaceAddVisible": false,
       "showZoomControls": true,
       "type": "mosaic",
       "viewportPosition": {
-        "x": 0,
-        "y": 0
+        "x": null,
+        "y": null
       },
       "width": 5000,
       "windowIds": [
-        "window-2ad0d441-3ff2-48f0-92e2-0202430405d0",
-        "window-7aec0b1e-8b11-4150-b628-c952566266c6"
+        "window-f08c9879-36fd-4128-a34c-40a26b7a563d",
+        "window-437772ac-3d93-44c6-858f-bb0db7b92f76",
+        "window-82ad4f22-11eb-43b1-bdc9-3d776df8c621",
+        "window-6da7101b-5103-475e-929d-9fba7617f324",
+        "window-99201b68-2cd7-4d12-9b88-34409c5fefec",
+        "window-1f635c8c-2081-41d8-9e2d-0ebf61836cb3"
       ],
-      "focusedWindowId": "window-7aec0b1e-8b11-4150-b628-c952566266c6",
+      "focusedWindowId": "window-82ad4f22-11eb-43b1-bdc9-3d776df8c621",
       "layout": {
         "direction": "row",
-        "first": "window-2ad0d441-3ff2-48f0-92e2-0202430405d0",
-        "second": "window-7aec0b1e-8b11-4150-b628-c952566266c6"
+        "first": "window-f08c9879-36fd-4128-a34c-40a26b7a563d",
+        "second": {
+          "direction": "column",
+          "first": {
+            "direction": "row",
+            "first": "window-82ad4f22-11eb-43b1-bdc9-3d776df8c621",
+            "second": {
+              "direction": "column",
+              "first": {
+                "direction": "row",
+                "first": "window-99201b68-2cd7-4d12-9b88-34409c5fefec",
+                "second": "window-1f635c8c-2081-41d8-9e2d-0ebf61836cb3",
+                "splitPercentage": 43.09764309764309
+              },
+              "second": "window-6da7101b-5103-475e-929d-9fba7617f324"
+            },
+            "splitPercentage": 33.408071748878925
+          },
+          "second": "window-437772ac-3d93-44c6-858f-bb0db7b92f76"
+        },
+        "splitPercentage": 20.640569395017792
       }
     }
   }

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- FontAwesome for the hamburger icon -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="check-btn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo"><a href="index.html">De Regimine Principum</a></label>
+    <ul>
+      <li><a  href="index.html">Home</a></li>
+      <li><a   href="chapters.html">Text</a></li>
+      <li class="dropdown">
+        <a href="manuscripts.html">Manuscripts ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="manuscripts.html">Manuscript List</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="sigla.html">Sigla</a></li>
+          <li><a href="abbreviations.html">Versions</a></li>
+          <li><a href="owners.html">Owners</a></li>
+          <li><a href="composite_texts.html">Associated Texts</a></li>
+
+
+
+
+        </ul>
+      </li>    
+      <li><a class="active" href="viewers.html">Mirador Workspaces</a></li>
+      
+
+
+    </ul>
+  </nav>
+      
+
+
+  <main class="page">
+   
+
+    <div class="viewer-grid">
+
+      <div class="mirador-embed-wrapper">
+        <div class="mirador-header">
+            <a href="workspaces/groupI.json" target="_blank" rel="noopener">ABCDEFGHIJ</a> 
+          </div>
+        <iframe
+          src="https://projectmirador.org/embed/"
+          width="100%"
+          height="600"
+          allowfullscreen
+          style="border: none; margin-top: 20px;">
+        </iframe>
+      </div>
+
+      <div class="mirador-embed-wrapper">
+        <div class="mirador-header">
+          <a href="workspaces/Group2.json" target="_blank" rel="noopener">KMNOPRST</a> 
+        </div>
+        <iframe
+          src="https://projectmirador.org/embed/"
+          width="100%"
+          height="600"
+          allowfullscreen
+          style="border: none; margin-top: 20px;">
+        </iframe>
+      </div>
+
+      <div class="mirador-embed-wrapper">
+        <div class="mirador-header">
+          <a href="workspaces/group3.json" target="_blank" rel="noopener">vwxyzAa</a> 
+          </div>
+        <iframe
+          src="https://projectmirador.org/embed/"
+          width="100%"
+          height="600"
+          allowfullscreen
+          style="border: none; margin-top: 20px;">
+        </iframe>
+      </div>
+
+      <div class="mirador-embed-wrapper">
+        <div class="mirador-header">
+          <a href="workspaces/group4.json" target="_blank" rel="noopener">VXYdefg</a> 
+
+          </div>
+        <iframe
+          src="https://projectmirador.org/embed/"
+          width="100%"
+          height="600"
+          allowfullscreen
+          style="border: none; margin-top: 20px;">
+        </iframe>
+      </div>
+
+      <div class="mirador-embed-wrapper">
+        <div class="mirador-header">
+          <a href="workspaces/group4.json" target="_blank" rel="noopener">opqrst</a> 
+
+          </div>
+        <iframe
+          src="https://projectmirador.org/embed/"
+          width="100%"
+          height="600"
+          allowfullscreen
+          style="border: none; margin-top: 20px;">
+        </iframe>
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,1162 @@
+{
+  "catalog": [
+    {
+      "manifestId": "https://cdm21059.contentdm.oclc.org/iiif/plutei:442985/manifest.json"
+    },
+    {
+      "manifestId": "https://cdm21059.contentdm.oclc.org/iiif/plutei:917528/manifest.json"
+    },
+    {
+      "manifestId": "https://dhb.thulb.uni-jena.de/api/iiif/presentation/v2/ufb_derivate_00020895/manifest"
+    },
+    {
+      "manifestId": "https://glam.uni.wroc.pl/iiif/RKP_MIL_II_73_71774/manifest"
+    },
+    {
+      "manifestId": "https://api.irht.cnrs.fr/ark:/63955/fusvf4i8hc52/manifest.json"
+    },
+    {
+      "manifestId": "https://iiif.durham.ac.uk/manifests/trifle/32150/t2/mn/29/t2mn296wz17z/manifest"
+    },
+    {
+      "manifestId": "https://dms-data.stanford.edu/data/manifests/Parker/qx516qb5271/manifest.json"
+    },
+    {
+      "manifestId": "https://digi.vatlib.it/iiif/MSS_Reg.lat.844/manifest.json"
+    },
+    {
+      "manifestId": "https://iiif.harvardartmuseums.org/manifests/object/299843"
+    },
+    {
+      "manifestId": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/e32a277e-91e2-4a6d-8ba6-cc4bad230410.json"
+    },
+    {
+      "manifestId": "https://media.nga.gov/public/manifests/nga_highlights.json",
+      "provider": "National Gallery of Art"
+    },
+    {
+      "manifestId": "https://wellcomelibrary.org/iiif/b18035723/manifest",
+      "provider": "Wellcome Library"
+    },
+    {
+      "manifestId": "https://demos.biblissima.fr/iiif/metadata/florus-dispersus/manifest.json",
+      "provider": "Biblissima"
+    },
+    {
+      "manifestId": "https://www.e-codices.unifr.ch/metadata/iiif/gau-Fragment/manifest.json",
+      "provider": "e-codices - Virtual Manuscript Library of Switzerland"
+    },
+    {
+      "manifestId": "https://wellcomelibrary.org/iiif/collection/b18031511",
+      "provider": "Wellcome Library"
+    },
+    {
+      "manifestId": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10022508f/manifest.json",
+      "provider": "Bibliothèque nationale de France"
+    },
+    {
+      "manifestId": "https://manifests.britishart.yale.edu/Osbornfa1",
+      "provider": "Beinecke Rare Book and Manuscript Library, Yale University"
+    },
+    {
+      "manifestId": "https://iiif.biblissima.fr/chateauroux/B360446201_MS0005/manifest.json",
+      "provider": "Biblissima"
+    },
+    {
+      "manifestId": "https://iiif.durham.ac.uk/manifests/trifle/32150/t1/m4/q7/t1m4q77fr328/manifest",
+      "provider": "Durham University Library"
+    },
+    {
+      "manifestId": "https://zavicajna.digitalna.rs/iiif/api/presentation/3/96571949-03d6-478e-ab44-a2d5ad68f935%252F00000001%252Fostalo01%252F00000071/manifest",
+      "provider": "Библиотека 'Милутин Бојић'"
+    }
+  ],
+  "companionWindows": {
+    "cw-34cc17fb-bc83-462c-9982-e150f7ba1c87": {
+      "content": "info",
+      "default": true,
+      "id": "cw-34cc17fb-bc83-462c-9982-e150f7ba1c87",
+      "position": "left"
+    },
+    "cw-de404776-1fec-459c-81cc-e28af2c9800b": {
+      "content": "thumbnailNavigation",
+      "default": true,
+      "id": "cw-de404776-1fec-459c-81cc-e28af2c9800b",
+      "position": "off"
+    },
+    "cw-e1da9ace-e0c5-4ca8-b29f-6f521ecdb405": {
+      "content": "info",
+      "default": true,
+      "id": "cw-e1da9ace-e0c5-4ca8-b29f-6f521ecdb405",
+      "position": "left"
+    },
+    "cw-ec75cd9f-e81b-4208-a07f-9da592806354": {
+      "content": "thumbnailNavigation",
+      "default": true,
+      "id": "cw-ec75cd9f-e81b-4208-a07f-9da592806354",
+      "position": "far-bottom"
+    },
+    "cw-2136f924-b9b0-4a26-8c06-22790c4dd47b": {
+      "content": "info",
+      "default": true,
+      "id": "cw-2136f924-b9b0-4a26-8c06-22790c4dd47b",
+      "position": "left"
+    },
+    "cw-66b3a2b0-276c-49f4-8545-ff47e779ad4c": {
+      "content": "thumbnailNavigation",
+      "default": true,
+      "id": "cw-66b3a2b0-276c-49f4-8545-ff47e779ad4c",
+      "position": "off"
+    },
+    "cw-f8ae1ab9-90f0-41a5-aa05-0b79988c31ac": {
+      "content": "info",
+      "default": true,
+      "id": "cw-f8ae1ab9-90f0-41a5-aa05-0b79988c31ac",
+      "position": "left"
+    },
+    "cw-e3ea9b1a-d261-4a1c-9f06-8690bf7c8793": {
+      "content": "thumbnailNavigation",
+      "default": true,
+      "id": "cw-e3ea9b1a-d261-4a1c-9f06-8690bf7c8793",
+      "position": "off"
+    },
+    "cw-caa1ca5e-cee5-42d2-b9bb-38623ab6dba0": {
+      "content": "info",
+      "default": true,
+      "id": "cw-caa1ca5e-cee5-42d2-b9bb-38623ab6dba0",
+      "position": "left"
+    },
+    "cw-432c4306-dcbf-444a-ba30-8000abdb754e": {
+      "content": "thumbnailNavigation",
+      "default": true,
+      "id": "cw-432c4306-dcbf-444a-ba30-8000abdb754e",
+      "position": "off"
+    },
+    "cw-d30b4c4f-8f9a-4708-9b92-1f5df25768f2": {
+      "content": "info",
+      "default": true,
+      "id": "cw-d30b4c4f-8f9a-4708-9b92-1f5df25768f2",
+      "position": "left"
+    },
+    "cw-9d6f6df8-cbe2-498d-b1a8-048ed765bdb7": {
+      "content": "thumbnailNavigation",
+      "default": true,
+      "id": "cw-9d6f6df8-cbe2-498d-b1a8-048ed765bdb7",
+      "position": "off"
+    },
+    "cw-239b9728-0d52-48c0-981e-05bc4907d0a8": {
+      "content": "info",
+      "default": true,
+      "id": "cw-239b9728-0d52-48c0-981e-05bc4907d0a8",
+      "position": "left"
+    },
+    "cw-f57652e6-b7eb-4c7f-bee6-decf734cb69d": {
+      "content": "thumbnailNavigation",
+      "default": true,
+      "id": "cw-f57652e6-b7eb-4c7f-bee6-decf734cb69d",
+      "position": "off"
+    },
+    "cw-c8dfab46-96e1-4db1-b5b6-c989bd69de55": {
+      "content": "info",
+      "default": true,
+      "id": "cw-c8dfab46-96e1-4db1-b5b6-c989bd69de55",
+      "position": "left"
+    },
+    "cw-430b0c88-7ee0-4a7c-8208-0b083345fbb5": {
+      "content": "thumbnailNavigation",
+      "default": true,
+      "id": "cw-430b0c88-7ee0-4a7c-8208-0b083345fbb5",
+      "position": "off"
+    },
+    "cw-5c836f95-2920-422b-ab11-1e4c3b730493": {
+      "content": "info",
+      "default": true,
+      "id": "cw-5c836f95-2920-422b-ab11-1e4c3b730493",
+      "position": "left"
+    },
+    "cw-11402fab-689d-4df2-9cbd-5db8ed30292a": {
+      "content": "thumbnailNavigation",
+      "default": true,
+      "id": "cw-11402fab-689d-4df2-9cbd-5db8ed30292a",
+      "position": "off"
+    },
+    "cw-cfa00c48-3503-4fdb-8c8a-bffcb71f8c76": {
+      "content": "info",
+      "default": true,
+      "id": "cw-cfa00c48-3503-4fdb-8c8a-bffcb71f8c76",
+      "position": "left"
+    },
+    "cw-4fc28dee-7326-42be-88ee-17116e1cea72": {
+      "content": "thumbnailNavigation",
+      "default": true,
+      "id": "cw-4fc28dee-7326-42be-88ee-17116e1cea72",
+      "position": "off"
+    }
+  },
+  "config": {
+    "state": {},
+    "canvasNavigation": {
+      "height": 50,
+      "width": 50
+    },
+    "selectedTheme": "light",
+    "themes": {
+      "dark": {
+        "palette": {
+          "mode": "dark",
+          "primary": {
+            "main": "#4db6ac"
+          },
+          "secondary": {
+            "main": "#4db6ac"
+          },
+          "shades": {
+            "dark": "#000000",
+            "main": "#424242",
+            "light": "#616161"
+          }
+        }
+      },
+      "light": {
+        "palette": {
+          "mode": "light"
+        }
+      }
+    },
+    "theme": {
+      "palette": {
+        "mode": "light",
+        "primary": {
+          "main": "#1967d2"
+        },
+        "secondary": {
+          "main": "#1967d2"
+        },
+        "shades": {
+          "dark": "#eeeeee",
+          "main": "#ffffff",
+          "light": "#f5f5f5"
+        },
+        "error": {
+          "main": "#b00020"
+        },
+        "notification": {
+          "main": "#ffa224"
+        },
+        "hitCounter": {
+          "default": "#bdbdbd"
+        },
+        "highlights": {
+          "primary": "#ffff00",
+          "secondary": "#00BFFF"
+        },
+        "section_divider": "rgba(0, 0, 0, 0.25)",
+        "annotations": {
+          "chipBackground": "#e0e0e0",
+          "hidden": {
+            "globalAlpha": 0
+          },
+          "default": {
+            "strokeStyle": "#00BFFF",
+            "globalAlpha": 1
+          },
+          "hovered": {
+            "strokeStyle": "#BF00FF",
+            "globalAlpha": 1
+          },
+          "selected": {
+            "strokeStyle": "#ffff00",
+            "globalAlpha": 1
+          }
+        },
+        "search": {
+          "default": {
+            "fillStyle": "#00BFFF",
+            "globalAlpha": 0.3
+          },
+          "hovered": {
+            "fillStyle": "#00FFFF",
+            "globalAlpha": 0.3
+          },
+          "selected": {
+            "fillStyle": "#ffff00",
+            "globalAlpha": 0.3
+          }
+        }
+      },
+      "typography": {
+        "body1": {
+          "fontSize": "1rem",
+          "letterSpacing": "0em",
+          "lineHeight": "1.6em"
+        },
+        "body2": {
+          "fontSize": "0.878rem",
+          "letterSpacing": "0.015em",
+          "lineHeight": "1.6em"
+        },
+        "button": {
+          "fontSize": "0.878rem",
+          "letterSpacing": "0.09em",
+          "lineHeight": "2.25rem",
+          "textTransform": "uppercase"
+        },
+        "caption": {
+          "fontSize": "0.772rem",
+          "letterSpacing": "0.033em",
+          "lineHeight": "1.6rem"
+        },
+        "body1Next": {
+          "fontSize": "1rem",
+          "letterSpacing": "0em",
+          "lineHeight": "1.6em"
+        },
+        "body2Next": {
+          "fontSize": "0.878rem",
+          "letterSpacing": "0.015em",
+          "lineHeight": "1.6em"
+        },
+        "buttonNext": {
+          "fontSize": "0.878rem",
+          "letterSpacing": "0.09em",
+          "lineHeight": "2.25rem"
+        },
+        "captionNext": {
+          "fontSize": "0.772rem",
+          "letterSpacing": "0.33em",
+          "lineHeight": "1.6rem"
+        },
+        "overline": {
+          "fontSize": "0.678rem",
+          "fontWeight": 500,
+          "letterSpacing": "0.166em",
+          "lineHeight": "2em",
+          "textTransform": "uppercase"
+        },
+        "h1": {
+          "fontSize": "2.822rem",
+          "letterSpacing": "-0.015em",
+          "lineHeight": "1.2em"
+        },
+        "h2": {
+          "fontSize": "1.575rem",
+          "letterSpacing": "0em",
+          "lineHeight": "1.33em"
+        },
+        "h3": {
+          "fontSize": "1.383rem",
+          "fontWeight": 300,
+          "letterSpacing": "0em",
+          "lineHeight": "1.33em"
+        },
+        "h4": {
+          "fontSize": "1.215rem",
+          "letterSpacing": "0.007em",
+          "lineHeight": "1.45em"
+        },
+        "h5": {
+          "fontSize": "1.138rem",
+          "letterSpacing": "0.005em",
+          "lineHeight": "1.55em"
+        },
+        "h6": {
+          "fontSize": "1.067rem",
+          "fontWeight": 400,
+          "letterSpacing": "0.01em",
+          "lineHeight": "1.6em"
+        },
+        "subtitle1": {
+          "fontSize": "0.937rem",
+          "letterSpacing": "0.015em",
+          "lineHeight": "1.6em",
+          "fontWeight": 300
+        },
+        "subtitle2": {
+          "fontSize": "0.878rem",
+          "fontWeight": 500,
+          "letterSpacing": "0.02em",
+          "lineHeight": "1.75em"
+        },
+        "useNextVariants": true
+      },
+      "components": {
+        "MuiMenuItem": {
+          "variants": [
+            {
+              "props": {
+                "variant": "multiline"
+              },
+              "style": {
+                "whiteSpace": "normal"
+              }
+            }
+          ]
+        },
+        "CompanionWindow": {
+          "styleOverrides": {
+            "closeButton": {
+              "order": 4
+            },
+            "contents": {
+              "overflowY": "auto",
+              "wordBreak": "break-word"
+            },
+            "positionButton": {
+              "marginLeft": -16,
+              "order": -100,
+              "width": 24
+            }
+          }
+        },
+        "CompanionWindowSection": {
+          "styleOverrides": {
+            "root": {
+              "borderBlockEnd": ".5px solid rgba(0, 0, 0, 0.25)"
+            }
+          }
+        },
+        "IIIFHtmlContent": {
+          "styleOverrides": {}
+        },
+        "IIIFThumbnail": {
+          "styleOverrides": {}
+        },
+        "ThemeIcon": {
+          "styleOverrides": {}
+        },
+        "MuiAccordion": {
+          "variants": [
+            {
+              "props": {
+                "variant": "compact"
+              },
+              "style": {
+                "& .MuiAccordionSummary-root": {
+                  "minHeight": "unset",
+                  "padding": 0
+                },
+                "& .MuiAccordionSummary-content": {
+                  "margin": 0
+                },
+                "& .MuiAccordionDetails-root": {
+                  "padding": 0
+                }
+              }
+            }
+          ]
+        },
+        "MuiButton": {
+          "styleOverrides": {
+            "inlineText": {
+              "lineHeight": "1.5em",
+              "padding": 0,
+              "textAlign": "inherit",
+              "textTransform": "none"
+            }
+          }
+        },
+        "MuiButtonBase": {
+          "defaultProps": {
+            "disableTouchRipple": true
+          }
+        },
+        "MuiDialog": {
+          "variants": [
+            {
+              "props": {
+                "variant": "contained"
+              },
+              "style": {
+                "position": "absolute",
+                "& .MuiBackdrop-root": {
+                  "position": "absolute"
+                }
+              }
+            }
+          ]
+        },
+        "MuiFab": {
+          "styleOverrides": {
+            "root": {
+              "transition": "none"
+            }
+          }
+        },
+        "MuiLink": {
+          "defaultProps": {
+            "underline": "always"
+          }
+        },
+        "MuiListSubheader": {
+          "styleOverrides": {
+            "root": {
+              "&[role=\"presentation\"]:focus": {
+                "outline": 0
+              }
+            }
+          }
+        },
+        "MuiTooltip": {
+          "styleOverrides": {
+            "tooltipPlacementLeft": {
+              "@media (min-width:600px)": {
+                "margin": "0 !important"
+              }
+            },
+            "tooltipPlacementRight": {
+              "@media (min-width:600px)": {
+                "margin": "0 !important"
+              }
+            },
+            "tooltipPlacementTop": {
+              "@media (min-width:600px)": {
+                "margin": "0 !important"
+              }
+            },
+            "tooltipPlacementBottom": {
+              "@media (min-width:600px)": {
+                "margin": "0 !important"
+              }
+            }
+          }
+        },
+        "MuiTouchRipple": {
+          "styleOverrides": {
+            "childPulsate": {
+              "animation": "none"
+            },
+            "rippleVisible": {
+              "animation": "none"
+            }
+          }
+        }
+      },
+      "transitions": {}
+    },
+    "language": "en",
+    "availableLanguages": {
+      "ar": "العربية",
+      "de": "Deutsch",
+      "en": "English",
+      "et": "Eesti",
+      "fa": "فارسی",
+      "fr": "Français",
+      "hr": "Hrvatski",
+      "ja": "日本語",
+      "kr": "한국어",
+      "lt": "Lietuvių",
+      "hu": "Magyar",
+      "nl": "Nederlands",
+      "nb-NO": "Norwegian Bokmål",
+      "pl": "Polski",
+      "pt-BR": "Português do Brasil",
+      "vi": "Tiếng Việt",
+      "zh-CN": "中文(简体)",
+      "zh-TW": "中文(繁體)",
+      "it": "Italiano",
+      "sr": "Српски",
+      "sv": "Svenska",
+      "bg": "Български"
+    },
+    "annotations": {
+      "htmlSanitizationRuleSet": "iiif",
+      "filteredMotivations": [
+        "oa:commenting",
+        "oa:tagging",
+        "sc:painting",
+        "commenting",
+        "tagging"
+      ]
+    },
+    "createGenerateClassNameOptions": {
+      "productionPrefix": "mirador"
+    },
+    "requests": {
+      "preprocessors": [],
+      "postprocessors": []
+    },
+    "translations": {},
+    "window": {
+      "allowClose": true,
+      "allowFullscreen": false,
+      "allowMaximize": true,
+      "allowTopMenuButton": true,
+      "allowWindowSideBar": true,
+      "authNewWindowCenter": "parent",
+      "sideBarPanel": "info",
+      "defaultSidebarPanelHeight": 201,
+      "defaultSidebarPanelWidth": 235,
+      "defaultView": "single",
+      "forceDrawAnnotations": false,
+      "hideWindowTitle": false,
+      "highlightAllAnnotations": false,
+      "showLocalePicker": false,
+      "sideBarOpen": false,
+      "switchCanvasOnSearch": true,
+      "panels": {
+        "info": true,
+        "attribution": true,
+        "canvas": true,
+        "annotations": true,
+        "search": true,
+        "layers": true
+      },
+      "views": [
+        {
+          "key": "single",
+          "behaviors": [
+            "individuals"
+          ]
+        },
+        {
+          "key": "book",
+          "behaviors": [
+            "paged"
+          ]
+        },
+        {
+          "key": "scroll",
+          "behaviors": [
+            "continuous"
+          ]
+        },
+        {
+          "key": "gallery"
+        }
+      ],
+      "elastic": {
+        "height": 400,
+        "width": 480
+      }
+    },
+    "windows": [
+      {
+        "canvasId": "https://iiif.harvardartmuseums.org/manifests/object/299843/canvas/canvas-47174892",
+        "manifestId": "https://iiif.harvardartmuseums.org/manifests/object/299843"
+      },
+      {
+        "canvasId": "https://iiif.bodleian.ox.ac.uk/iiif/canvas/e58b8c60-005c-4c41-a22f-07d49cb25ede.json",
+        "manifestId": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/e32a277e-91e2-4a6d-8ba6-cc4bad230410.json",
+        "thumbnailNavigationPosition": "far-bottom"
+      }
+    ],
+    "thumbnails": {
+      "preferredFormats": [
+        "jpg",
+        "png",
+        "webp",
+        "tif"
+      ]
+    },
+    "thumbnailNavigation": {
+      "defaultPosition": "off",
+      "displaySettings": true,
+      "height": 130,
+      "showThumbnailLabels": true,
+      "width": 100
+    },
+    "workspace": {
+      "allowNewWindows": true,
+      "draggingEnabled": true,
+      "exposeModeOn": false,
+      "height": 5000,
+      "id": "93627aa6-c6f1-4740-9dad-ade5667b4066",
+      "isWorkspaceAddVisible": false,
+      "showZoomControls": true,
+      "type": "mosaic",
+      "viewportPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "width": 5000
+    },
+    "workspaceControlPanel": {
+      "enabled": true
+    },
+    "galleryView": {
+      "height": 120,
+      "width": null
+    },
+    "osdConfig": {
+      "alwaysBlend": false,
+      "blendTime": 0.1,
+      "preserveImageSizeOnResize": true,
+      "preserveViewport": true,
+      "showNavigationControl": false,
+      "zoomPerClick": 1,
+      "zoomPerDoubleClick": 2
+    },
+    "export": {
+      "catalog": true,
+      "companionWindows": true,
+      "config": true,
+      "elasticLayout": true,
+      "layers": true,
+      "manifests": {},
+      "viewers": true,
+      "windows": true,
+      "workspace": true
+    },
+    "audioOptions": {
+      "controls": true,
+      "crossOrigin": "anonymous"
+    },
+    "videoOptions": {
+      "controls": true,
+      "crossOrigin": "anonymous"
+    },
+    "auth": {
+      "serviceProfiles": [
+        {
+          "profile": "http://iiif.io/api/auth/1/external",
+          "external": true
+        },
+        {
+          "profile": "http://iiif.io/api/auth/1/kiosk",
+          "kiosk": true
+        },
+        {
+          "profile": "http://iiif.io/api/auth/1/clickthrough"
+        },
+        {
+          "profile": "http://iiif.io/api/auth/1/login"
+        },
+        {
+          "profile": "http://iiif.io/api/auth/0/external",
+          "external": true
+        },
+        {
+          "profile": "http://iiif.io/api/auth/0/kiosk",
+          "kiosk": true
+        },
+        {
+          "profile": "http://iiif.io/api/auth/0/clickthrough"
+        },
+        {
+          "profile": "http://iiif.io/api/auth/0/login"
+        }
+      ]
+    },
+    "labelValueJoiner": ", ",
+    "catalog": [
+      {
+        "manifestId": "https://iiif.harvardartmuseums.org/manifests/object/299843"
+      },
+      {
+        "manifestId": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/e32a277e-91e2-4a6d-8ba6-cc4bad230410.json"
+      },
+      {
+        "manifestId": "https://media.nga.gov/public/manifests/nga_highlights.json",
+        "provider": "National Gallery of Art"
+      },
+      {
+        "manifestId": "https://wellcomelibrary.org/iiif/b18035723/manifest",
+        "provider": "Wellcome Library"
+      },
+      {
+        "manifestId": "https://demos.biblissima.fr/iiif/metadata/florus-dispersus/manifest.json",
+        "provider": "Biblissima"
+      },
+      {
+        "manifestId": "https://www.e-codices.unifr.ch/metadata/iiif/gau-Fragment/manifest.json",
+        "provider": "e-codices - Virtual Manuscript Library of Switzerland"
+      },
+      {
+        "manifestId": "https://wellcomelibrary.org/iiif/collection/b18031511",
+        "provider": "Wellcome Library"
+      },
+      {
+        "manifestId": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10022508f/manifest.json",
+        "provider": "Bibliothèque nationale de France"
+      },
+      {
+        "manifestId": "https://manifests.britishart.yale.edu/Osbornfa1",
+        "provider": "Beinecke Rare Book and Manuscript Library, Yale University"
+      },
+      {
+        "manifestId": "https://iiif.biblissima.fr/chateauroux/B360446201_MS0005/manifest.json",
+        "provider": "Biblissima"
+      },
+      {
+        "manifestId": "https://iiif.durham.ac.uk/manifests/trifle/32150/t1/m4/q7/t1m4q77fr328/manifest",
+        "provider": "Durham University Library"
+      },
+      {
+        "manifestId": "https://zavicajna.digitalna.rs/iiif/api/presentation/3/96571949-03d6-478e-ab44-a2d5ad68f935%252F00000001%252Fostalo01%252F00000071/manifest",
+        "provider": "Библиотека 'Милутин Бојић'"
+      }
+    ],
+    "id": "mirador"
+  },
+  "elasticLayout": {
+    "window-c995a706-fbc1-42cd-9bec-1428ce4883df": {
+      "windowId": "window-c995a706-fbc1-42cd-9bec-1428ce4883df",
+      "height": 400,
+      "width": 480,
+      "x": 200,
+      "y": 200
+    },
+    "window-b46863f9-e9fd-48da-89e7-3fa8bedd8e28": {
+      "windowId": "window-b46863f9-e9fd-48da-89e7-3fa8bedd8e28",
+      "height": 400,
+      "width": 480,
+      "x": 230,
+      "y": 250
+    },
+    "window-aa797ac2-6643-43ce-b3d0-1bbf3a1f5f65": {
+      "windowId": "window-aa797ac2-6643-43ce-b3d0-1bbf3a1f5f65",
+      "height": 400,
+      "width": 480,
+      "x": 260,
+      "y": 300
+    },
+    "window-78420100-6f47-4934-90f0-4ee506de636b": {
+      "windowId": "window-78420100-6f47-4934-90f0-4ee506de636b",
+      "height": 400,
+      "width": 480,
+      "x": 290,
+      "y": 350
+    },
+    "window-cb509318-a282-420c-9266-37751f078c2c": {
+      "windowId": "window-cb509318-a282-420c-9266-37751f078c2c",
+      "height": 400,
+      "width": 480,
+      "x": 320,
+      "y": 400
+    },
+    "window-aa144701-e24e-4a7d-9194-673db4ec35e9": {
+      "windowId": "window-aa144701-e24e-4a7d-9194-673db4ec35e9",
+      "height": 400,
+      "width": 480,
+      "x": 350,
+      "y": 450
+    },
+    "window-4d461c65-cade-43ec-a5b0-0a1495e8ddc4": {
+      "windowId": "window-4d461c65-cade-43ec-a5b0-0a1495e8ddc4",
+      "height": 400,
+      "width": 480,
+      "x": 380,
+      "y": 200
+    },
+    "window-2f6b14fb-4953-4a9b-8ce6-5e1dd0ad1c76": {
+      "windowId": "window-2f6b14fb-4953-4a9b-8ce6-5e1dd0ad1c76",
+      "height": 400,
+      "width": 480,
+      "x": 410,
+      "y": 250
+    }
+  },
+  "layers": {},
+  "manifests": {},
+  "viewers": {
+    "window-c995a706-fbc1-42cd-9bec-1428ce4883df": {
+      "flip": false,
+      "rotation": 0,
+      "x": 463,
+      "y": 1531,
+      "zoom": 0.010377358490566039
+    },
+    "window-b46863f9-e9fd-48da-89e7-3fa8bedd8e28": {
+      "flip": false,
+      "rotation": 0,
+      "x": 2505,
+      "y": 6003,
+      "zoom": 0.000282236656380801
+    },
+    "window-aa797ac2-6643-43ce-b3d0-1bbf3a1f5f65": {
+      "flip": false,
+      "rotation": 0,
+      "x": 1456,
+      "y": 4663,
+      "zoom": 0.0005204443943661971
+    },
+    "window-78420100-6f47-4934-90f0-4ee506de636b": {
+      "flip": false,
+      "rotation": 0,
+      "x": 2200,
+      "y": 1544,
+      "zoom": 0.0011381868423529407
+    },
+    "window-cb509318-a282-420c-9266-37751f078c2c": {
+      "flip": false,
+      "rotation": 0,
+      "x": 2131,
+      "y": 5285,
+      "zoom": 0.0017484550072666331
+    },
+    "window-aa144701-e24e-4a7d-9194-673db4ec35e9": {
+      "flip": false,
+      "rotation": 0,
+      "x": 2544,
+      "y": 2759,
+      "zoom": 0.0003284726023988454
+    },
+    "window-4d461c65-cade-43ec-a5b0-0a1495e8ddc4": {
+      "flip": false,
+      "rotation": 0,
+      "x": 1281,
+      "y": 1127,
+      "zoom": 0.07947140010036559
+    },
+    "window-2f6b14fb-4953-4a9b-8ce6-5e1dd0ad1c76": {
+      "flip": false,
+      "rotation": 0,
+      "x": 1286,
+      "y": 1600,
+      "zoom": 0.0005926444246274497
+    }
+  },
+  "windows": {
+    "window-c995a706-fbc1-42cd-9bec-1428ce4883df": {
+      "canvasId": "https://digi.vatlib.it/iiif/MSS_Reg.lat.844/canvas/p0121",
+      "collectionIndex": 0,
+      "companionAreaOpen": true,
+      "companionWindowIds": [
+        "cw-2136f924-b9b0-4a26-8c06-22790c4dd47b",
+        "cw-66b3a2b0-276c-49f4-8545-ff47e779ad4c"
+      ],
+      "draggingEnabled": true,
+      "highlightAllAnnotations": false,
+      "id": "window-c995a706-fbc1-42cd-9bec-1428ce4883df",
+      "manifestId": "https://digi.vatlib.it/iiif/MSS_Reg.lat.844/manifest.json",
+      "maximized": false,
+      "rangeId": null,
+      "rotation": null,
+      "selectedAnnotations": {},
+      "sideBarOpen": false,
+      "sideBarPanel": "info",
+      "thumbnailNavigationId": "cw-66b3a2b0-276c-49f4-8545-ff47e779ad4c",
+      "visibleCanvases": [
+        "https://digi.vatlib.it/iiif/MSS_Reg.lat.844/canvas/p0121"
+      ],
+      "view": "single"
+    },
+    "window-b46863f9-e9fd-48da-89e7-3fa8bedd8e28": {
+      "canvasId": "https://dms-data.stanford.edu/data/manifests/Parker/qx516qb5271/canvas/canvas-90",
+      "collectionIndex": 0,
+      "companionAreaOpen": true,
+      "companionWindowIds": [
+        "cw-f8ae1ab9-90f0-41a5-aa05-0b79988c31ac",
+        "cw-e3ea9b1a-d261-4a1c-9f06-8690bf7c8793"
+      ],
+      "draggingEnabled": true,
+      "highlightAllAnnotations": false,
+      "id": "window-b46863f9-e9fd-48da-89e7-3fa8bedd8e28",
+      "manifestId": "https://dms-data.stanford.edu/data/manifests/Parker/qx516qb5271/manifest.json",
+      "maximized": false,
+      "rangeId": null,
+      "rotation": null,
+      "selectedAnnotations": {},
+      "sideBarOpen": false,
+      "sideBarPanel": "info",
+      "thumbnailNavigationId": "cw-e3ea9b1a-d261-4a1c-9f06-8690bf7c8793",
+      "visibleCanvases": [
+        "https://dms-data.stanford.edu/data/manifests/Parker/qx516qb5271/canvas/canvas-90"
+      ],
+      "view": "single"
+    },
+    "window-aa797ac2-6643-43ce-b3d0-1bbf3a1f5f65": {
+      "canvasId": "https://iiif.durham.ac.uk/manifests/trifle/32150/t2/mn/29/t2mn296wz17z/canvas/t2tsf268673b",
+      "collectionIndex": 0,
+      "companionAreaOpen": true,
+      "companionWindowIds": [
+        "cw-caa1ca5e-cee5-42d2-b9bb-38623ab6dba0",
+        "cw-432c4306-dcbf-444a-ba30-8000abdb754e"
+      ],
+      "draggingEnabled": true,
+      "highlightAllAnnotations": false,
+      "id": "window-aa797ac2-6643-43ce-b3d0-1bbf3a1f5f65",
+      "manifestId": "https://iiif.durham.ac.uk/manifests/trifle/32150/t2/mn/29/t2mn296wz17z/manifest",
+      "maximized": false,
+      "rangeId": null,
+      "rotation": null,
+      "selectedAnnotations": {},
+      "sideBarOpen": false,
+      "sideBarPanel": "info",
+      "thumbnailNavigationId": "cw-432c4306-dcbf-444a-ba30-8000abdb754e",
+      "visibleCanvases": [
+        "https://iiif.durham.ac.uk/manifests/trifle/32150/t2/mn/29/t2mn296wz17z/canvas/t2tsf268673b"
+      ],
+      "view": "single"
+    },
+    "window-78420100-6f47-4934-90f0-4ee506de636b": {
+      "canvasId": "https://arca.irht.cnrs.fr/iiif/85252/canvas/canvas-318817",
+      "collectionIndex": 0,
+      "companionAreaOpen": true,
+      "companionWindowIds": [
+        "cw-d30b4c4f-8f9a-4708-9b92-1f5df25768f2",
+        "cw-9d6f6df8-cbe2-498d-b1a8-048ed765bdb7"
+      ],
+      "draggingEnabled": true,
+      "highlightAllAnnotations": false,
+      "id": "window-78420100-6f47-4934-90f0-4ee506de636b",
+      "manifestId": "https://api.irht.cnrs.fr/ark:/63955/fusvf4i8hc52/manifest.json",
+      "maximized": false,
+      "rangeId": null,
+      "rotation": null,
+      "selectedAnnotations": {},
+      "sideBarOpen": false,
+      "sideBarPanel": "info",
+      "thumbnailNavigationId": "cw-9d6f6df8-cbe2-498d-b1a8-048ed765bdb7",
+      "visibleCanvases": [
+        "https://arca.irht.cnrs.fr/iiif/85252/canvas/canvas-318817"
+      ],
+      "view": "single"
+    },
+    "window-cb509318-a282-420c-9266-37751f078c2c": {
+      "canvasId": "https://glam.uni.wroc.pl/iiif/RKP_MIL_II_73_71774/canvas/c471",
+      "collectionIndex": 0,
+      "companionAreaOpen": false,
+      "companionWindowIds": [
+        "cw-239b9728-0d52-48c0-981e-05bc4907d0a8",
+        "cw-f57652e6-b7eb-4c7f-bee6-decf734cb69d"
+      ],
+      "draggingEnabled": true,
+      "highlightAllAnnotations": false,
+      "id": "window-cb509318-a282-420c-9266-37751f078c2c",
+      "manifestId": "https://glam.uni.wroc.pl/iiif/RKP_MIL_II_73_71774/manifest",
+      "maximized": false,
+      "rangeId": null,
+      "rotation": null,
+      "selectedAnnotations": {},
+      "sideBarOpen": true,
+      "sideBarPanel": "info",
+      "thumbnailNavigationId": "cw-f57652e6-b7eb-4c7f-bee6-decf734cb69d",
+      "visibleCanvases": [
+        "https://glam.uni.wroc.pl/iiif/RKP_MIL_II_73_71774/canvas/c471"
+      ],
+      "view": "single"
+    },
+    "window-aa144701-e24e-4a7d-9194-673db4ec35e9": {
+      "canvasId": "https://dhb.thulb.uni-jena.de/api/iiif/presentation/v2/ufb_derivate_00020895/canvas/ufb_derivate_00020895%2FCA-2-00139_0073.tif",
+      "collectionIndex": 0,
+      "companionAreaOpen": true,
+      "companionWindowIds": [
+        "cw-c8dfab46-96e1-4db1-b5b6-c989bd69de55",
+        "cw-430b0c88-7ee0-4a7c-8208-0b083345fbb5"
+      ],
+      "draggingEnabled": true,
+      "highlightAllAnnotations": false,
+      "id": "window-aa144701-e24e-4a7d-9194-673db4ec35e9",
+      "manifestId": "https://dhb.thulb.uni-jena.de/api/iiif/presentation/v2/ufb_derivate_00020895/manifest",
+      "maximized": false,
+      "rangeId": null,
+      "rotation": null,
+      "selectedAnnotations": {},
+      "sideBarOpen": false,
+      "sideBarPanel": "info",
+      "thumbnailNavigationId": "cw-430b0c88-7ee0-4a7c-8208-0b083345fbb5",
+      "visibleCanvases": [
+        "https://dhb.thulb.uni-jena.de/api/iiif/presentation/v2/ufb_derivate_00020895/canvas/ufb_derivate_00020895%2FCA-2-00139_0073.tif"
+      ],
+      "view": "single"
+    },
+    "window-4d461c65-cade-43ec-a5b0-0a1495e8ddc4": {
+      "canvasId": "https://cdm21059.contentdm.oclc.org/iiif/plutei:917288/canvas/c102",
+      "collectionIndex": 0,
+      "companionAreaOpen": false,
+      "companionWindowIds": [
+        "cw-5c836f95-2920-422b-ab11-1e4c3b730493",
+        "cw-11402fab-689d-4df2-9cbd-5db8ed30292a"
+      ],
+      "draggingEnabled": true,
+      "highlightAllAnnotations": false,
+      "id": "window-4d461c65-cade-43ec-a5b0-0a1495e8ddc4",
+      "manifestId": "https://cdm21059.contentdm.oclc.org/iiif/plutei:917528/manifest.json",
+      "maximized": false,
+      "rangeId": null,
+      "rotation": null,
+      "selectedAnnotations": {},
+      "sideBarOpen": true,
+      "sideBarPanel": "info",
+      "thumbnailNavigationId": "cw-11402fab-689d-4df2-9cbd-5db8ed30292a",
+      "visibleCanvases": [
+        "https://cdm21059.contentdm.oclc.org/iiif/plutei:917288/canvas/c102"
+      ],
+      "view": "single"
+    },
+    "window-2f6b14fb-4953-4a9b-8ce6-5e1dd0ad1c76": {
+      "canvasId": "https://cdm21059.contentdm.oclc.org/iiif/plutei:442810/canvas/c69",
+      "collectionIndex": 0,
+      "companionAreaOpen": false,
+      "companionWindowIds": [
+        "cw-cfa00c48-3503-4fdb-8c8a-bffcb71f8c76",
+        "cw-4fc28dee-7326-42be-88ee-17116e1cea72"
+      ],
+      "draggingEnabled": true,
+      "highlightAllAnnotations": false,
+      "id": "window-2f6b14fb-4953-4a9b-8ce6-5e1dd0ad1c76",
+      "manifestId": "https://cdm21059.contentdm.oclc.org/iiif/plutei:442985/manifest.json",
+      "maximized": true,
+      "rangeId": null,
+      "rotation": null,
+      "selectedAnnotations": {},
+      "sideBarOpen": true,
+      "sideBarPanel": "info",
+      "thumbnailNavigationId": "cw-4fc28dee-7326-42be-88ee-17116e1cea72",
+      "visibleCanvases": [
+        "https://cdm21059.contentdm.oclc.org/iiif/plutei:442810/canvas/c69"
+      ],
+      "view": "single"
+    }
+  },
+  "workspace": {
+    "allowNewWindows": true,
+    "draggingEnabled": true,
+    "exposeModeOn": false,
+    "height": 5000,
+    "id": "33d09e61-dca6-4e60-b720-286b1d56675b",
+    "isWorkspaceAddVisible": false,
+    "showZoomControls": true,
+    "type": "mosaic",
+    "viewportPosition": {
+      "x": null,
+      "y": null
+    },
+    "width": 5000,
+    "windowIds": [
+      "window-c995a706-fbc1-42cd-9bec-1428ce4883df",
+      "window-b46863f9-e9fd-48da-89e7-3fa8bedd8e28",
+      "window-aa797ac2-6643-43ce-b3d0-1bbf3a1f5f65",
+      "window-78420100-6f47-4934-90f0-4ee506de636b",
+      "window-cb509318-a282-420c-9266-37751f078c2c",
+      "window-aa144701-e24e-4a7d-9194-673db4ec35e9",
+      "window-4d461c65-cade-43ec-a5b0-0a1495e8ddc4",
+      "window-2f6b14fb-4953-4a9b-8ce6-5e1dd0ad1c76"
+    ],
+    "focusedWindowId": "window-2f6b14fb-4953-4a9b-8ce6-5e1dd0ad1c76",
+    "layout": {
+      "direction": "row",
+      "first": "window-c995a706-fbc1-42cd-9bec-1428ce4883df",
+      "second": {
+        "direction": "column",
+        "first": {
+          "direction": "row",
+          "first": "window-aa797ac2-6643-43ce-b3d0-1bbf3a1f5f65",
+          "second": {
+            "direction": "column",
+            "first": {
+              "direction": "row",
+              "first": "window-cb509318-a282-420c-9266-37751f078c2c",
+              "second": {
+                "direction": "column",
+                "first": {
+                  "direction": "row",
+                  "first": "window-4d461c65-cade-43ec-a5b0-0a1495e8ddc4",
+                  "second": "window-2f6b14fb-4953-4a9b-8ce6-5e1dd0ad1c76",
+                  "splitPercentage": 20
+                },
+                "second": "window-aa144701-e24e-4a7d-9194-673db4ec35e9"
+              },
+              "splitPercentage": 20
+            },
+            "second": "window-78420100-6f47-4934-90f0-4ee506de636b"
+          },
+          "splitPercentage": 43.505338078291814
+        },
+        "second": "window-b46863f9-e9fd-48da-89e7-3fa8bedd8e28"
+      },
+      "splitPercentage": 20
+    }
+  }
+}
